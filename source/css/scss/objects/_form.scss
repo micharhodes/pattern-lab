@@ -1,0 +1,99 @@
+input[type=range] {
+    border-style: none;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    
+    &:focus {
+        outline: none;
+        
+        &::-webkit-slider-runnable-track {
+            background: $light-gray;
+            border: 1px solid $secondary-stroke-color;
+        }
+        
+        &::-ms-fill-upper {
+            background: $light-gray;
+            border: 1px solid $secondary-stroke-color;
+        }
+        
+        &::-ms-fill-lower {
+            background: $light-gray;
+            border: 1px solid $secondary-stroke-color;
+        }
+    }
+    
+    &::-webkit-slider-runnable-track {
+        animate: 0.2s;
+        background: $light-gray;
+        border: 1px solid $secondary-stroke-color;
+        border-radius: 25px;
+        cursor: pointer;
+        height: 9px;
+        width: 100%;
+    }
+    
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background: $primary-accent;
+        border: 0px solid #000000;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 32px;
+        margin-top: -11.5px;
+        width: 11px;
+    }
+    
+    &::-moz-range-track {
+        animate: 0.2s;
+        background: $light-gray;
+        border: 1px solid $secondary-stroke-color;
+        border-radius: 25px;
+        cursor: pointer;
+        height: 9px;
+        width: 100%;
+    }
+    
+    &::-moz-range-thumb {
+        background: $primary-accent;
+        border: 0px solid #000000;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 32px;
+        width: 11px;
+    }
+    
+    &::-ms-track {
+        animate: 0.2s;
+        background: transparent;
+        border-color: transparent;
+        border-width: 39px 0;
+        color: transparent;
+        cursor: pointer;
+        height: 9px;
+        width: 100%;
+    }
+    
+    &::-ms-fill-lower {
+        background: $light-gray;
+        border: 1px solid $secondary-stroke-color;
+        border-radius: 50px;
+    }
+    
+    &::-ms-fill-upper {
+        background: $light-gray;
+        border: 1px solid $secondary-stroke-color;
+        border-radius: 50px;
+    }
+    
+    &::-ms-thumb {
+        cursor: pointer;
+        background: $primary-accent;
+        border: 0px solid #000000;
+        border-radius: 4px;
+        height: 32px;
+        width: 11px;
+    }
+}

@@ -1,0 +1,111 @@
+.simple-retirement {
+    margin-top: 25px;
+    text-align: center;
+    
+    header {
+        h4 {
+            &:after {
+                background: $primary-accent;
+                content: '';
+                display: block;
+                height: 2px;
+                margin-bottom: 14px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 11px;
+                width: 52px;
+            }
+        }
+        
+        p {
+            &.subheading {
+                font-size: $font-size-sm;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    form {
+        margin: 0 15px;
+        position: relative;
+        text-align: center;
+        
+        &.hide-max {
+            .range-max {
+                display: none;
+            }
+        }
+        
+        &.hide-min {
+            .range-min {
+                display: none;
+            }
+        }
+        
+        .range-value {
+            font-family: $font-header;
+            font-size: rem-calc(22px);
+            font-weight: $font-heavy;
+        }
+        
+        .range-min {
+            float: left;
+        }
+        
+        .range-current {
+            color: $primary-accent;
+            position: absolute;
+        }
+        
+        .range-max {
+            float: right;
+        }
+        
+        output {
+            font-family: $font-header;
+            font-size: rem-calc(34px);
+            font-weight: $font-heavy;
+        }
+        
+        .footnotes {
+            color: $gray-text;
+            font-size: rem-calc(12px);
+        }
+    }
+    
+    a {
+        &.btn {
+            width: auto;
+        }
+    }
+}
+
+@include breakpoint(medium) {
+    .simple-retirement {
+        header {
+            h4 {
+                &:after {
+                    margin-top: 18px;
+                }
+            }
+        }
+        form {
+            output {
+                font-size: rem-calc(42px);
+            }
+        }
+        a {
+            &.btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.range-current {
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+}
