@@ -1,0 +1,22 @@
+<fieldset>
+{{# selectList }}
+    <div class="field-container">
+        {{# label }}<label for="{{ id }}">{{ label }}:</label>{{/ label }}
+        <div class="select-dropdown">
+            <select id="{{ id }}">
+            {{# groups }}
+                <optgroup label="{{ label }}">
+                    {{# options }}
+                    <option value="{{ value }}">{{ label }}</option>
+                    {{/ options }}
+                </optgroup>
+            {{/ groups }}
+            {{# options }}
+                <option value="{{ value }}">{{ label }}</option>
+            {{/ options }}
+            </select>
+            <span class="icon-chevron-sm-down"></span>
+        </div>
+    </div>
+{{/ selectList }}
+</fieldset>

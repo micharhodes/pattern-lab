@@ -1,0 +1,104 @@
+ul.accordion {
+	margin-bottom: $space;
+	border: 1px solid $stroke-color;
+	li.accordion-item {
+		margin-top: 0;
+		background: $light-gray;
+		color: $dark-gray;
+		border-bottom: 1px solid $stroke-color;
+		position: relative;
+
+		&.is-active{
+			background: $white;
+
+			.accordion-content {
+				// transform: translate(0,0%);
+				transition: max-height .3s ease 0s, padding 0s ease 0s ;
+				max-height: 999px;
+				overflow: auto;
+				padding: 0 1rem 1.25rem 1rem
+			}
+		}
+		&:last-child{
+			border-bottom: none;
+		}
+		.accordion-content {
+			transition: max-height .3s ease 0s, padding 0s ease .3s ;
+			max-height: 0;
+			display: block !important;
+			overflow: hidden;
+			padding: 0;
+
+			// transform: translate(0,-100%);
+		}
+	}
+	.accordion-title{
+				$tg: rem-calc(16);  //toggle gutter
+
+		@include makeIcon('chevron-sm-down', 'before');
+		color: $dark-gray;
+		font-weight: $font-bold;
+		text-transform: uppercase;
+		font-size: rem-calc(10px);
+
+
+		&:before {
+			color: $stroke-color;
+			position: absolute;
+			right: $tg;
+			top: 50%;
+			transform: rotate(0deg);
+			transition: {
+
+				property: transform;
+				duration: 500ms;
+
+			}
+		}
+		&:hover {
+			&:before {
+				transform: rotate(90deg);
+			}
+		}
+
+	}
+	.is-active .accordion-title{
+		border-bottom: none;
+
+		&:before {
+						transform: rotate(180deg);
+					}
+	
+
+	}
+}
+
+/*.acc-handle {
+	background: $gray-dark-2;
+	color: $white;
+	font-family: $font-secondary;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	padding: $pad-half;
+	border-bottom: 1px solid $gray-light-3;
+
+	&:after {
+		content:"\e936";
+		float: right;
+	}
+		
+	&:hover {
+		color: $white;
+		background: $gray-dark;
+
+	}
+	
+	&.active {
+		background: $gray-dark;
+
+		&:after {
+			content:"\e936";
+		}
+	}
+}*/

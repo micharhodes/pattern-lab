@@ -1,0 +1,106 @@
+.header {
+	background: $white;
+	padding: 0;
+	/*@extend .lc;*/
+	@include grid-row;
+	// overflow: hidden;
+	max-width: 100%;
+}
+
+/*********** TOP HAT *************/
+
+/* Layout */
+
+.tophat {
+	background: $light-gray;
+	border-top: 1px solid $stroke-color;
+	border-bottom: 1px solid $stroke-color;
+	height: rem-calc(36);
+	overflow: hidden;
+	@include grid-column-row;
+	@include breakpoint(medium) {
+		height: rem-calc(32);
+	}
+	@include breakpoint(large) {
+		height: auto;
+		overflow: visible;
+		max-width:100%;
+	}
+}
+/* end layout*/
+
+/*********** END TOPHAT *********/
+
+
+/*********** HEADER-MAIN ************/
+
+.header-main {
+	/* Layout */
+	@include grid-column-row;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	@include breakpoint(medium) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.logo, div.search-form {
+		@include grid-column(12);
+	}
+	.logo {
+		@include breakpoint(medium) {
+			@include grid-column(3);
+		}
+		@include breakpoint(large) {
+			@include grid-column(4);
+		}
+	}
+	div.search-form {
+		@include breakpoint(medium) {
+			@include grid-column(6);
+		}
+		@include breakpoint(large) {
+			@include grid-column(4);
+		}
+	}
+	.utility-nav {
+		@include breakpoint(medium) {
+			@include grid-column(3);
+		}
+		@include breakpoint(large) {
+			@include grid-column(4);
+		}
+	}
+	/* end layout*/
+
+	.logo {
+		text-align: center;
+		margin-bottom: 0.75rem;
+	}
+	.utility-nav {
+		margin-top: 0.55rem;
+	}
+	div.search-form {
+		overflow: hidden;
+		// max-height: 0;
+		[type='search'] {
+			margin: 0;
+		}
+		// @media all and (min-width: $bp-med) {
+		@include breakpoint(medium) {
+			max-height: none;
+			margin: 0.5rem 0;
+		}
+	}
+
+	// @media all and (min-width: $bp-large) {
+	@include breakpoint(large) {
+
+		padding-top: 1.5rem;
+		padding-bottom: 1rem;
+		.logo {
+			text-align: left;
+			margin-top: -0.25rem;
+		}
+	}
+
+}

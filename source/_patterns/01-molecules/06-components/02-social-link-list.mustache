@@ -1,0 +1,9 @@
+<section class="social-link-list">
+  {{# iconList}}
+  <ul>
+  {{# linkItems}}
+    <li>{{# url}}<a href="{{{url}}}" target="_blank" title="{{title}}">{{/ url}}{{# icon }}<span class="icon-{{icon}}"></span> {{/ icon}}{{# url}}</a>{{/ url}}</li>
+  {{/ linkItems}}
+  </ul>
+  {{/ iconList}}
+</section>

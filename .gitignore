@@ -1,0 +1,17 @@
+##### Pattern Lab Output #####
+node_modules/
+public/
+aem/
+
+patternlab.json
+config.ini
+source/css/style.css.map
+
+##### Environment #####
+.DS_Store
+source/images/Thumbs.db
+
+##### IDE #####
+.idea/
+*.sublime-project
+*.sublime-workspace

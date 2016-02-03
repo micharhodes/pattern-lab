@@ -1,0 +1,19 @@
+{{# accordion}}
+<ul class="accordion" data-accordion role="tablist"  data-allow-all-closed="{{ allow-all-closed }}">
+  {{# accordion-item}}
+  <li class="accordion-item {{ active-class }}">
+    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+    <a href="#{{ accordionItemId }}" role="tab" class="accordion-title icon-{{icon}}" id="{{ accordionItemId }}-heading" aria-controls="{{accordionItemId}}">{{ accordion-title }}</a>
+    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+    <div id="{{accordionItemId}}" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="{{accordionItemId}}-heading">
+      {{# accordion-list }}
+        {{> molecules-document-link }}
+      {{/ accordion-list }}
+      {{# accordion-content }}
+        {{{ accordion-content }}}
+      {{/ accordion-content}}
+    </div>
+  </li>
+  {{/ accordion-item}}
+</ul>
+{{/ accordion}}

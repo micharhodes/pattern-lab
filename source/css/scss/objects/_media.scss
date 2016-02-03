@@ -1,0 +1,131 @@
+figure {
+	position:relative;
+	&.large-swatch {
+		max-width: 510px;
+		margin: 0 auto;
+		text-align: center;
+		img {
+			border: 8px solid $white;
+			box-shadow: 0 0 0 1px $stroke-color;
+			margin-bottom: rem-calc(10);
+			// min-width: 100%;
+		}
+		figcaption {
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+	}
+	&.photo-gallery-item, 
+	&.case-study-item, 
+	&.download-file-item {
+		figcaption {
+			font-size: 0.875rem;
+			a {
+				font-weight: $font-medium;
+				margin-right: rem-calc(5);
+			}
+			@include breakpoint(large) {
+				font-size: 1rem;
+			}
+		}
+		.metadata {
+			font-family: $font;
+			text-transform: uppercase;
+			color: $gray-text;
+			.divider {
+				padding: 0 rem-calc(3);
+			}
+			@include breakpoint(large) {
+				font-size: rem-calc(14);
+			}
+		}
+		a .metadata {
+			color: $primary-link;
+			font-weight: $font-bold;
+			.divider {
+				font-weight: $font-normal;
+			}
+			&:hover, &:focus {
+				color: $primary-link-hover;
+			}
+		}
+	}
+	&.case-study-item {
+		figcaption {
+			a {
+				display: block;
+				margin-right: 0;
+			}
+		}
+	}
+	&.download-file-item,
+	&.design-file-item {
+		img {
+			border: 1px solid $stroke-color;
+		}
+		figcaption{
+			ul {
+				margin: 0.5rem 0 0 0;
+			}
+			li {
+				margin-top: 0;
+				margin-right: 1rem;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&.collection-item,
+	&.design-file-item {
+		figcaption {
+			a {
+				font-size: rem-calc(16);
+				@include breakpoint(medium) {
+					font-size: rem-calc(18);
+				}
+			}
+		}
+	}
+	&.collection-item {
+		figcaption {
+			a {
+				font-weight: $font-bold;
+			}
+		}
+	}
+	&.design-file-item {
+		figcaption {
+			a {
+				font-weight: $font-medium;
+			}
+		}
+	}
+}
+
+.main-image {
+	position: relative;
+	a {
+		&:hover, &:focus {
+			.enlarge {
+				color: rgba(255,255,255,1);
+			}
+		}
+	}
+	.enlarge {
+		position: absolute;
+	    bottom: 1.15rem;
+	    right: 0.5rem;
+	    font-size: 1.75rem;
+	    color: rgba(255,255,255,0.75);
+	    @include transition(color,0.25s,ease-out);
+	    &:hover, &:focus {
+	    	color: rgba(255,255,255,1);
+	    }
+	}
+	@include breakpoint(large) {
+		.enlarge {
+			font-size: 2.25rem;
+		}
+	}
+}

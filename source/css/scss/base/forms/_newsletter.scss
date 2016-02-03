@@ -1,0 +1,25 @@
+$widget: 'newsletter';
+
+.#{$widget}-form {
+	label {
+		font-family: $font-secondary;
+		font-weight: normal;
+		font-size: rem-calc(14);
+		color: $gray-text;
+		line-height: 1.3;
+		text-transform: inherit;
+	}
+	fieldset {
+		margin-top: rem-calc(16);
+		margin-bottom: rem-calc(16);
+	}
+	.#{$widget}-field {
+		margin-bottom: 0;
+		padding-right: rem-calc(60);
+	}
+	/*.#{$widget}-submit {
+			background: $primary-accent;
+			padding-left: rem-calc(10);
+			padding-right: rem-calc(10);
+	}*/
+}

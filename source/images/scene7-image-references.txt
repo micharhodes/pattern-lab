@@ -1,0 +1,79 @@
+A collection of URLs from Commercial Ceilings's scene7 library to use in the pattern library:
+
+/********* COLOR SWATCHES **********/
+
+/* Use the wid= and hei= parameters to load different asset sizes!*/
+
+Effects Cherry: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH?wid=600&hei=600
+Effects Cherry Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH?wid=20&hei=20
+Effects Dark Cherry: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXDC?wid=20&hei=20
+Effects Dark Cherry Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXDC?wid=20&hei=20
+Effects Maple: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXMP?wid=20&hei=20
+Effects Maple Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXMP?wid=20&hei=20
+Effects Oak: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXOK?wid=20&hei=20
+Effects Oak Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXOK?wid=20&hei=20
+Effects Walnut: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWN?wid=20&hei=20
+Effects Walnut Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWN?wid=20&hei=20
+Effects Walnut Espresso: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWE?wid=20&hei=20
+Effects Walnut Espresso Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWE?wid=20&hei=20
+Gun Metal Grey: http://s7d2.scene7.com/is/image/Armstrong/abp_col_MY?wid=20&hei=20
+Gun Metal Grey Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_MY?wid=20&hei=20
+Silver Grey: http://s7d2.scene7.com/is/image/Armstrong/abp_col_SG?wid=20&hei=20
+Silver Grey Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_SG?wid=20&hei=20
+White: http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH?wid=20&hei=20
+White Exterior: http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH?wid=20&hei=20
+
+
+/********* EDGE PROFILES **********/
+
+Square Tegular 15/16" Small: http://www.armstrong.com/pdbupimages/6463M1192223.jpg
+Square Tegular 15/16" Large: http://www.armstrong.com/pdbupimages/6463M1192222.jpg
+
+Square Tegular 9/16" Small: http://www.armstrong.com/pdbupimages/6464M1192228.jpg
+Square Tegular 9/16" Large: http://www.armstrong.com/pdbupimages/6464M1192227.jpg
+
+Flush Tegular 15/16" Small: http://www.armstrong.com/pdbupimages/9444U6A2WH83623.gif
+Flush Tegular 15/16" Large: http://www.armstrong.com/pdbupimages/9444U6A2WH83949.gif
+
+
+
+/********* PRODUCT PHOTOS *********/
+
+Step 1. Find a product image on current site using google image search
+Step 2. Open image in new tab
+Step 3. Modify parameters to get the size you want. 
+
+From image strategy doc:
+
+Resize Only – Preserve Aspect Ratio
+http://s7d2.scene7.com/is/image/Armstrong/{asset-id}?wid={width-in-pixels}
+or
+http://s7d2.scene7.com/is/image/Armstrong/{asset-id}?hei={height-in-pixels}
+
+
+Resize and Crop – Preserve Aspect Ratio and Crop from Center
+http://s7d2.scene7.com/is/image/Armstrong/{asset-id}?wid={width-in-pixels}&hei={height-in-pixels}&fit=crop
+
+Full Example
+<img data-interchange="[http://s7d2.scene7.com/is/image/Armstrong/CP607?wid=60&hei=60&fit=crop, default], [http://s7d2.scene7.com/is/image/Armstrong/CP607?wid=300&hei=300&fit=crop, ac-tablet], [http://s7d2.scene7.com/is/image/Armstrong/CP607?wid=604&hei=604&fit=crop, ac-desktop]">
+
+http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30
+http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A
+http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12
+http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40
+http://s7d2.scene7.com/is/image/Armstrong/EX_MWSnpIn_IrvCC_08
+http://s7d2.scene7.com/is/image/Armstrong/Paige_3.pp
+http://s7d2.scene7.com/is/image/Armstrong/RS_NS_CHRY_006D
+http://s7d2.scene7.com/is/image/Armstrong/RSInfusions_HHendy_Gallery
+http://s7d2.scene7.com/is/image/Armstrong/RS_OptKE_AX_AnchrBnk_02
+http://s7d2.scene7.com/is/image/Armstrong/RS_MWTinCp_Xmpf_LDC_10D
+http://s7d2.scene7.com/is/image/Armstrong/RS_InfCn_KCRoy_27
+http://s7d2.scene7.com/is/image/Armstrong/trading%20floor%20pano-2
+http://s7d2.scene7.com/is/image/Armstrong/RS_MWRH215_Nokia_112B
+
+
+
+
+
+
+

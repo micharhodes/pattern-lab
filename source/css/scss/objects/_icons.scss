@@ -1,0 +1,150 @@
+/*@font-face {
+	font-family: 'armstrongicon';
+	src:url('../fonts/armstrongicon.eot?b8wyok');
+	src:url('../fonts/armstrongicon.eot?b8wyok#iefix') format('embedded-opentype'),
+		url('../fonts/armstrongicon.ttf?b8wyok') format('truetype'),
+		url('../fonts/armstrongicon.woff?b8wyok') format('woff'),
+		url('../fonts/armstrongicon.svg?b8wyok#armstrongicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+@mixin iconBase {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+@mixin makeIcon($iconID, $direction:'before') {
+	@include iconBase();
+	
+	&:#{$direction} {
+		content: '#{map-get($iconMap, $iconID)}';
+	}
+}
+
+[class^="icon-"], [class*=" icon-"], .icon {
+	@include iconBase;
+}
+
+//Icon Map
+$iconMap: (
+	'armstrong-logo': '\e900',
+	'armstrong-tagline': '\e901',
+	'acoustics': '\e902',
+	'ac-acoustics': '\e903',
+	'stc-acoustics': '\e904',
+	'nrc-acoustics': '\e905',
+	'cac-acoustics': '\e906',
+	'total-acoustics': '\e907',
+	'access': '\e908',
+	'airquality': '\e909',
+	'anti-microbial': '\e90a',
+	'c2c': '\e90b',
+	'chemical': '\e90c',
+	'color': '\e90d',
+	'def': '\e90e',
+	'dirt-resist': '\e90f',
+	'durability': '\e910',
+	'fire': '\e911',
+	'humidity': '\e912',
+	'humidity4': '\e913',
+	'impact-resist': '\e914',
+	'light-reflectance': '\e915',
+	'peaked': '\e916',
+	'recycle-circle': '\e917',
+	'scratch-resist': '\e918',
+	'scrubability': '\e919',
+	'washability': '\e91a',
+	'water-repel': '\e91b',
+	'warranty': '\e91c',
+	'circlecheck': '\e920',
+	'square-panel': '\e95a',
+	'rectangle-panel': '\e959',
+	'plank': '\e958',
+	'recycle': '\e91d',
+	'map': '\e91e',
+	'order-samples': '\e91f',
+	'download-generic': '\e921',
+	'download-pdf': '\e922',
+	'download-zip': '\e923',
+	'check': '\e956',
+	'circle': '\e957',
+	'heart-filled': '\e924',
+	'heart': '\e925',
+	'star-filled': '\e926',
+	'star-half': '\e927',
+	'star': '\e928',
+	'globe': '\e929',
+	'avatar': '\e92a',
+	'phone': '\e92b',
+	'search': '\e92c',
+	'cart': '\e92d',
+	'chat': '\e92e',
+	'play': '\e92f',
+	'enlarge': '\e930',
+	'plant': '\e931',
+	'dollar': '\e932',
+	'euro': '\e933',
+	'pound': '\e934',
+	'yen': '\e935',
+	'chevron-lg-down': '\e936',
+	'chevron-lg-left': '\e937',
+	'chevron-lg-right': '\e938',
+	'chevron-lg-up': '\e939',
+	'chevron-sm-down': '\e93a',
+	'chevron-sm-left': '\e93b',
+	'chevron-sm-right': '\e93c',
+	'chevron-sm-up': '\e93d',
+	'triangle-down': '\e93e',
+	'triangle-left': '\e93f',
+	'triangle-right': '\e940',
+	'triangle-up': '\e941',
+	'x': '\e942',
+	'pipe-tall': '\e943',
+	'pipe': '\e944',
+	'share': '\e945',
+	'share-square': '\e945',
+	'compact': '\e945',
+	'compact-square': '\e945',
+	'email-square': '\e946',
+	'email': '\e947',
+	'facebook-square': '\e948' $facebook-hover,
+	'facebook': '\e949' $facebook-hover,
+	'g_plus-square': '\e94a' $gplus-hover,
+	'g_plus': '\e94b' $gplus-hover,
+	'instagram-square': '\e94c' $instagram-hover,
+	'instagram': '\e94d' $instagram-hover,
+	'linkedin-square': '\e94e' $linkedin-hover,
+	'linkedin': '\e94f' $linkedin-hover,
+	'pinterest-square': '\e950' $pinterest-hover,
+	'pinterest': '\e951' $pinterest-hover,
+	'twitter-square': '\e952' $twitter-hover,
+	'twitter': '\e953' $twitter-hover,
+	'youtube-square': '\e954' $youtube-hover,
+	'youtube': '\e955' $youtube-hover
+	);
+
+@each $icon-name, $icon-content in $iconMap {
+	.icon-#{$icon-name} {
+		&:before {
+			content: '#{nth($icon-content, 1)}';
+		}
+		
+		@if length($icon-content) > 1 {
+			a:hover & {
+				&:before {
+					color: nth($icon-content, 2);
+				}
+			}
+		}
+	}
+}

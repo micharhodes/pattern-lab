@@ -1,0 +1,72 @@
+$plugin-name: 'stat-cards';
+$each-column: 'stat-column';
+$each-card: 'stat-card';
+
+.#{$plugin-name} {
+	&.row {
+		margin-left: -3px;
+		margin-right: -3px;
+		margin-bottom: 1.5rem;
+	}
+	.#{$each-column} {
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.#{$each-card}{
+		border: 1px solid $stroke-color;
+		background: $white;
+		text-align: center;
+		margin-bottom: 6px;
+		position: relative;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+
+  		& > div {
+  			padding: 1.5rem 0.5rem;
+  		}
+		img{
+			max-height: 100%;
+		}
+		span[class^="icon-"]{
+			font-size: 2rem;
+			display: inline-block;
+			vertical-align: middle;
+			&.eco-green{
+				color: $eco-green;
+			}
+		}
+		.statValue{
+			font-family: $font;
+			font-weight: $font-heavy;
+			font-size: 2rem;
+			line-height: 0.8;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.statLabel{
+			font-family: $font;
+			font-weight: $font-heavy;
+			font-size: rem-calc(14px);
+			text-transform: uppercase;
+			color: $gray-text;
+			display: block;
+			line-height: 1;
+			margin-top: 1rem;
+		}
+
+	}
+	@include breakpoint(medium) {
+		.#{$each-card} {
+			max-height: rem-calc(150);
+			overflow: hidden;
+			span[class^="icon-"], .statValue{
+				font-size: rem-calc(48);
+			}
+		}
+		&.row {
+			margin-bottom: 0;
+		}
+	}
+
+}

@@ -1,0 +1,3306 @@
+{
+	"logo-url": "../../images/logo-placeholder.png",
+	"title" : "Page Title",
+	"htmlClass": "pl",
+	"bodyClass": "body",
+	"breadcrumbs": {
+		"forceBack": false,
+		"backText": "Back",
+		"crumbs" : [
+			{
+				"title": "Home",
+				"url": "/"
+			},
+			{
+				"title": "Tier 1",
+				"url": "/tier-1/"
+			},
+			{
+				"title": "Tier 2",
+				"url": "/tier-1/tier-2/"
+			}
+		]
+	},
+	"user": {
+		"name": "User Name",
+		"country": {
+			"title": "United States of America",
+			"abv": "USA",
+			"icon": "USA"
+		},
+		"language": {
+			"abv": "EN",
+			"title": "English"
+		}
+	},
+	"cart": {
+		"items": [
+		]
+	},	
+	"hero": {
+		"columns": 
+		[
+			{
+				"img" : {
+					"src": "http://placehold.it/604x604?text=HERO+LEFT",
+					"alt": "Hero 1 - 1:1"
+				}
+			},
+			{
+				"img" : {
+					"src": "http://placehold.it/604x604?text=HERO+MIDDLE",
+					"alt": "Hero 1 - 1:1"
+				},
+				"hasOverlay": true,
+				"overlay": {				
+					"headline": "lorem ipsum",
+					"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)",
+					"cta": {
+						"url": "http://www.google.com",
+						"title": "Learn More"
+					}
+				}
+			},
+			{
+				"img" : {
+					"src": "http://placehold.it/604x604?text=HERO+RIGHT",
+					"alt": "Hero 1 - 1:1"
+				}
+			}
+		]
+	}
+	,
+	"img": {
+		"hero-1x1" : {
+			"src": "../../images/hero/a-1.jpg",
+			"alt": "Hero 1 - 1:1"
+		},
+		"landscape-4x3": {
+			"src": "../../images/fpo_4x3.png",
+			"alt": "4x3 Image"
+		},
+		"landscape-16x9": {
+			"src": "../../images/fpo_16x9.png",
+			"alt": "16x9 Image"
+		},
+		"square": {
+			"src": "../../images/fpo_square.png",
+			"alt": "Square Thumbnail"
+		},
+		"avatar" : {
+			"src" : "../../images/fpo_avatar.png",
+			"alt" : "Person Name"
+		},
+		"rectangle": {
+			"src": "http://placeimg.com/400/300/tech",
+			"alt": "Rectangle"
+		}
+	},
+	"tag" : {
+		"tag-text" : "New Sizes!"
+	},
+	"video-item" : {
+		"url" : "#",
+		"title" : "Name of the Video",
+		"length" : "3:50"
+	},
+	
+	"case-study-item":{
+		"width" : "980",
+		"height" : "980",
+		"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+		"targetURL" : "#",
+		"title" : "Designed Coves Using Axiom® Aluminum Perimeter Trim",
+		"file-type" : "PDF",
+		"file-size" : "163KB",
+		"tag" : {
+			"tag-text" : "New!"
+		}
+	},
+
+	"download-item": {
+		"width" : "438",
+		"height" : "438",
+		"imageURL" : "http://lorempixel.com/438/438/business/",
+		"targetURL" : "#",
+		"title" : "This is the name of the document",
+		"fileList" : {
+			"fileItems":[
+				{
+					"url" : "#",
+					"file-type" : "PDF",
+					"file-size" : "10MB"
+				},
+				{
+					"url" : "#",
+					"file-type" : "DWG",
+					"file-size" : "12MB"
+				}
+			]
+		}
+	},
+				
+	"category-tiles": {
+		"columns": 
+		[
+			{
+				"img" : {
+					"src": "../../images/4to3-2.jpg",
+					"alt": "Ceilings and Walls"
+				},
+				"overlay": {				
+					"category-name": "Ceilings & Walls",
+					"category-desc": "Commercial ceiling systems to turn the ordinary into extraordinary.",
+					"cta": {
+						"url": "http://www.google.com",
+						"title": "Go to ceilings and walls"
+					}
+				}
+			},
+			{
+				"img" : {
+					"src": "../../images/4to3-3.jpg",
+					"alt": "Suspension Systems"
+				},
+				"overlay": {				
+					"category-name": "Suspension Systems",
+					"category-desc": "Reduce noise and add warmth with a variety of wall options",
+					"cta": {
+						"url": "http://www.google.com",
+						"title": "Go to ceilings and walls"
+					}
+				}
+			},
+			{
+				"img" : {
+					"src": "../../images/4to3.jpg",
+					"alt": "Integrated Solutions"
+				},
+				"overlay": {				
+					"category-name": "Integrated Solutions",
+					"category-desc": "Eliminate tying and spacing of track and channel framing with drywall grid.",
+					"cta": {
+						"url": "http://www.google.com",
+						"title": "Go to ceilings and walls"
+					}
+				}
+			}
+			
+		]
+	},
+	
+	"contact-tiles": {
+		"columns": 
+		[
+			{
+				"icon" : "icon-order-samples",
+				"url" : "http://www.google.com",
+				"title" : "Order Samples",
+				"desc" : "Select a product line and sample type and we'll ship it to your door - for free."
+			},
+			{
+				"icon" : "icon-chat",
+				"url" : "http://www.google.com",
+				"title" : "Contact Techline",
+				"desc" : "With over 100 years of combined experience, our TechLine experts are ready to answer your questions."
+			},
+			{
+				"icon" : "icon-map",
+				"url" : "http://www.google.com",
+				"title" : "Find a Distributor",
+				"desc" : "Looking for someone who can help? Find a distributor for all your commercial project needs."
+			}
+		]
+	},
+
+
+
+	"headline" : {
+		"short" : "Lorem ipsum dolor sit (37 characters)",
+		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)",
+		"long" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. (144 characters)"
+	},
+	"excerpt" : {
+		"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		"long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+	"url" : "#",
+	"name" : {
+		"first": "Lacy",
+		"firsti": "L",
+		"middle": "Tommie",
+		"middlei": "T",
+		"last": "Way",
+		"lasti": "W"
+	},
+	"year" : {
+		"long": "2013",
+		"short": "13"
+	},
+	"month" : {
+		"long": "February",
+		"short": "Feb",
+		"digit": "02"
+	},
+	"dayofweek" : {
+		"long": "Monday",
+		"short": "Mon"
+	},
+	"day" : {
+		"long": "10",
+		"short": "10",
+		"ordinal": "th"
+	},
+	"hour" : {
+		"long": "01",
+		"short": "1",
+		"military": "13",
+		"ampm": "pm"
+	},
+	"minute" : {
+		"long": "20",
+		"short": "20"
+	},
+	"seconds" : "31",
+	"author" : {
+		"first-name": "Author",
+		"last-name": "Name"
+	},
+	"emergency" : false,
+	"touts" : [
+		{ },
+		{ },
+		{ }
+	],
+	"latest-posts" : [
+		{ },
+		{ },
+		{ },
+		{ },
+		{ }
+	],
+	"linkList": {
+		"heading": "heading",
+		"headingUrl": "#headingURL",
+		"linkItems": [
+			{
+				"title": "Link1",
+				"description": "Lorem ipsum dolor sit amet",
+				"url": "#url1"
+			},
+			{
+				"title": "Link2",
+				"description": "consectetur adipisicing elit",
+				"url": "#url2"
+			},
+			{
+				"title": "Link3 - Phone",
+				"description": "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+				"url": "tel:867-5309"
+			},
+			{
+				"title": "Link4 - (TITLE DATA ONLY)",
+				"description": "Lorem ipsum dolor sit amet",
+				"url": null
+			}
+
+		]
+	},
+	"downloadButton": {
+		"title": "Download",
+		"icon": "download-generic",
+		"url": "#download"
+	},
+	"downloadLink": {
+		"url": "../../images/sample.zip",
+		"file-name": "Sample ZIP File Name",
+		"type": "zip",
+		"size": "8k"
+	},
+	"countrySelector": {
+		"heading": "Armstrong Worldwide",
+		"selectList": {
+			"id": "countrySelector",
+			"label": "Select Country",
+			"groups": [
+				{
+					"label": "North America",
+					"options": [
+						{
+							"label": "United States of America",
+							"value": "USA"
+						},
+						{
+							"label": "Canada",
+							"value": "CA"
+						},
+						{
+							"label": "Mexico",
+							"value": "MX"
+						}
+					]
+				},
+				{
+					"label": "Europe",
+					"options": [
+						{
+							"label": "Albania",
+							"value": "AL"
+						},
+						{
+							"label": "Andorra",
+							"value": "AD"
+						},
+						{
+							"label": "Armenia",
+							"value": "AM"
+						}
+					]
+				}
+			],
+			"options": null
+		}
+	},
+	"selectList": {
+		"id": "pl-sample",
+		"label": "Select",
+		"groups": [
+			{
+				"label": "Option Group 1",
+				"options": [
+					{
+						"label": "Option One",
+						"value": "1"
+					},
+					{
+						"label": "Option Two",
+						"value": "2"
+					},
+					{
+						"label": "Option Three",
+						"value": "3"
+					}
+				]
+			},
+			{
+				"label": "Option Group 2",
+				"options": [
+					{
+						"label": "Option Four",
+						"value": "4"
+					},
+					{
+						"label": "Option Five",
+						"value": "5"
+					},
+					{
+						"label": "Option Six",
+						"value": "6"
+					}
+				]
+			}
+		],
+		"options": [
+			{
+				"label": "Option Seven",
+				"value": "7"
+			},
+			{
+				"label": "Option Eight",
+				"value": "8"
+			},
+			{
+				"label": "Option Nine",
+				"value": "9"
+			}
+		]
+	},
+	"iconList": {
+		"linkItems": [
+			{
+				"title": "Facebook",
+				"icon": "facebook",
+				"url": "http://www.facebook.com"
+			},
+			{
+				"title": "Twitter",
+				"icon": "twitter",
+				"url": "http://www.twitter.com"
+			},
+			{
+				"title": "Google+",
+				"icon": "google_plusone",
+				"url": "http://www.googleplus.com"
+			},
+			{
+				"title": "Linkedin",
+				"icon": "linkedin",
+				"url": "http://www.linkedin.com"
+			},
+			{
+				"title": "Pinterest",
+				"icon": "pinterest",
+				"url": "http://www.pinterest.com"
+			},
+			{
+				"title": "Instagram",
+				"icon": "instagram",
+				"url": "http://www.instagram.com"
+			},
+			{
+				"title": "You Tube",
+				"icon": "youtube",
+				"url": "http://www.youtube.com"
+			}
+		]
+	},
+	"leedList":{
+		"heading": "LEED",
+		"action": "Calculate LEED Contribution",
+		"url": "#",
+		"alt": "goes nowhere",
+		"leedItems":[
+		{
+			"title":"Low VOC",
+			"icon":"circlecheck"
+		},
+		{
+			"title":"Green Tag Certified",
+			"icon":"circlecheck"
+		},
+		{
+			"title": "Construction Waste Management",
+			"icon":"circlecheck"
+		},
+		{
+			"title": "Regional Materials",
+			"icon": "circlecheck"
+		},
+		{
+			"title": "Design for Flexibility",
+			"icon": "circlecheck"
+		}
+		]
+	},
+	"downloadList": {
+		"linkItems": [
+			{
+				"url": "http://www.armstrong.com/common/c2002/content/files/89975.pdf",
+				"file-name": "Case Study: NOAA National Water Center",
+				"type": "pdf",
+				"size": "30k"
+			},
+			{
+				"url": "../../images/sample.zip",
+				"file-name": "Sample ZIP File Name",
+				"type": "zip",
+				"size": "8k"
+			},
+			{
+				"url": "../../images/sample.dwg",
+				"file-name": "Sample File Name",
+				"type": "dwg",
+				"size": "12k"
+			}
+		]
+	},
+	"statCards":{
+		"statCard":[
+		{
+			"icon": "recycle",
+			"statValue": "71%",
+			"statLabel": "Total Recycled<br />Post-Consumer Content",
+			"color": "eco-green"
+		},
+		{
+			"image": "http://lorempixel.com/570/285/business/",
+			"alt": "lipsum" 
+		},
+		{
+			
+			"statValue": "0 ppvb",
+			"statLabel": "Formaldeheyde Concentration"
+			
+		},
+		{
+			"icon": "recycle",
+			"statValue": "25%",
+			"statLabel": "Recyclable After Use",
+			"color": "eco-green"
+		}
+		]
+	},
+	"siteNav": {
+		"linkList": {
+			"linkItems": [
+				{
+					"title": "Commercial Ceilings",
+					"url": "#site-Commercial-Ceilings"
+				},
+				{
+					"title": "Residential Ceilings",
+					"url": "#site-Residential-Ceilings"
+				},
+				{
+					"title": "Corporate",
+					"url": "#site-Corporate"
+				}
+			]
+		},
+		"dropdownList": {
+			"linkItems": [
+				{
+					"title": "Residential Ceilings",
+					"url": "#site-Residential-Ceilings"
+				},
+				{
+					"title": "Armstrong Ceilings Corporate",
+					"url": "#site-Corporate"
+				}
+			]
+		}
+	},
+	"sticky-nav":{
+		"stickToID": "article1",
+		"linkList": {
+			"linkItems": [
+				{
+					"title": "Overview",
+					"url": "#overview"
+				},
+				{
+					"title": "Specifications",
+					"url": "#specifications"
+				},				{
+					"title": "Colors & Options",
+					"url": "#colors-and-options"
+				},
+				{
+					"title": "Photos &amp; Videos",
+					"url": "#photos"
+				},
+				{
+					"title": "Installation",
+					"url": "#installation"
+				}
+
+			]
+		},
+
+		"accordion-header": "Document Library",
+		"icon": "chevron-sm-down",
+		"accordion": {
+			"allow-all-closed": true,
+			"accordion-item": [
+				{
+					"accordionItemId": "first",
+					"accordion-title": "first title",
+					"accordion-content": "Some content for the first accordion. Let's try something<br />with some html.",
+					"active-class": "is-active",
+					"icon": "chevron-sm-down"
+				},
+				{
+					"accordionItemId": "second",
+					"accordion-title": "second title",
+					"accordion-content": "Some content for the second accordion. Let's try something<br />with some html.",
+					"icon": "chevron-sm-down"
+				},
+				{
+					"accordionItemId": "third",
+					"accordion-title": "third title",
+					"accordion-content": "Some content for the third accordion. Let's try something<br />with some html.",
+					"icon": "chevron-sm-down"
+				},
+				{
+					"accordionItemId": "fourth",
+					"accordion-title": "fourth title",
+					"accordion-list": {
+						"linkItems": [
+							{
+								"url": "http://www.armstrong.com/common/c2002/content/files/89975.pdf",
+								"file-name": "Case Study: NOAA National Water Center",
+								"type": "pdf",
+								"size": "30k"
+							},
+							{
+								"url": "../../images/sample.zip",
+								"file-name": "Sample ZIP File Name",
+								"type": "zip",
+								"size": "8k"
+							},
+							{
+								"url": "../../images/sample.dwg",
+								"file-name": "Sample File Name",
+								"type": "dwg",
+								"size": "12k"
+							}
+						]
+					},
+					"icon": "chevron-sm-down"
+
+				}
+			]
+		}
+	},
+	"footer": {
+		"linkList": {
+			"heading": "heading",
+			"headingUrl": "#headingURL",
+			"linkItems": [
+				{
+					"title": "Link1",
+					"description": "Lorem ipsum dolor sit amet",
+					"url": "#url1"
+				},
+				{
+					"title": "Link2",
+					"description": "consectetur adipisicing elit",
+					"url": "#url2"
+				},
+				{
+					"title": "Link3 - Phone",
+					"description": "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+					"url": "tel:867-5309"
+				},
+				{
+					"title": "Link4 - (TITLE DATA ONLY)",
+					"description": "Lorem ipsum dolor sit amet",
+					"url": null
+				}
+
+			]
+		},
+		"switchSites": {
+			"linkList": {
+				"heading": "Switch Sites",
+				"headingUrl": null,
+				"linkItems": [
+					{
+						"title": "Armstrong Ceilings - Residential",
+						"description": "Lorem ipsum dolor sit amet",
+						"url": "#ceilings-url1"
+					}
+				]
+			}
+		},
+		"aboutArmstrong": {
+			"linkList": {
+				"heading": "About Armstrong",
+				"headingUrl": null,
+				"linkItems": [
+					{
+						"title": "Corporate Home",
+						"url": "#ceilings-url1"
+					},
+					{
+						"title": "Company",
+						"url": "#company-url1"
+					},
+					{
+						"title": "Sustainability",
+						"url": "#sustainability-url1"
+					},
+					{
+						"title": "Investors",
+						"url": "#investors-url1"
+					},
+					{
+						"title": "Careers",
+						"url": "#careers-url1"
+					},
+					{
+						"title": "Press",
+						"url": "#press-url1"
+					}
+				]
+			}
+		},
+		"contact": {
+			"linkList": {
+				"heading": "Contact",
+				"headingUrl": null,
+				"linkItems": [
+					{
+						"title": "1-877-armstrong",
+						"url": "tel:1-877-armstrong"
+					},
+					{
+						"title": "Find Your Armstrong Rep",
+						"url": "#contact-find-rep"
+					},
+					{
+						"title": "Find a Contractor",
+						"url": "#contact-find-contractor"
+					},
+					{
+						"title": "Find a Distributor",
+						"url": "#contact-find-distributor"
+					}
+				]
+			}
+		},
+		"global": {
+			"linkList": {
+				"heading": "Switch Sites",
+				"headingUrl": null,
+				"linkItems": [
+					{
+						"title": "Trademarks",
+						"url": "#global-footer-trademarks"
+					},
+					{
+						"title": "Terms & Conditions",
+						"url": "#global-footer-terms"
+					},
+					{
+						"title": "Legal Notices",
+						"url": "#global-footer-legal"
+					},
+					{
+						"title": "Privacy Policy",
+						"url": "#global-footer-privacy"
+					},
+					{
+						"title": "Cookie Policy",
+						"url": "#global-footer-cookie"
+					}
+				]
+			}
+		},
+		"downloadButton": {
+			"title": "Download 2015 Catalog",
+			"icon": "download-pdf",
+			"url": "#download"
+		},
+		"iconList": {
+			"linkItems": [
+			{
+				"title": "Facebook",
+				"icon": "facebook",
+				"url": "http://www.facebook.com"
+			},
+			{
+				"title": "Twitter",
+				"icon": "twitter",
+				"url": "http://www.twitter.com"
+			},
+			{
+				"title": "Google+",
+				"icon": "google_plusone",
+				"url": "http://www.googleplus.com"
+			},
+			{
+				"title": "Linkedin",
+				"icon": "linkedin",
+				"url": "http://www.linkedin.com"
+			},
+			{
+				"title": "Pinterest",
+				"icon": "pinterest",
+				"url": "http://www.pinterest.com"
+			},
+			{
+				"title": "Instagram",
+				"icon": "instagram",
+				"url": "http://www.instagram.com"
+			},
+			{
+				"title": "You Tube",
+				"icon": "youtube",
+				"url": "http://www.youtube.com"
+			}
+
+			]
+		}
+	},
+	"accordion":{
+		"allow-all-closed": true,
+		"accordion-item": [
+			{
+				"accordionItemId": "first",
+				"accordion-title": "first title",
+				"accordion-content": "Some content for the first accordion. Let's try something<br />with some html.",
+				"active-class": "is-active",
+				"icon": "chevron-sm-down"
+			},
+			{
+				"accordionItemId": "second",
+				"accordion-title": "second title",
+				"accordion-content": "Some content for the second accordion. Let's try something<br />with some html.",
+				"icon": "chevron-sm-down"
+			},
+			{
+				"accordionItemId": "third",
+				"accordion-title": "third title",
+				"accordion-content": "Some content for the third accordion. Let's try something<br />with some html.",
+				"icon": "chevron-sm-down"
+			},
+			{
+				"accordionItemId": "fourth",
+				"accordion-title": "fourth title",
+				"accordion-list": {
+					"linkItems": [
+						{
+							"url": "http://www.armstrong.com/common/c2002/content/files/89975.pdf",
+							"file-name": "Case Study: NOAA National Water Center",
+							"type": "pdf",
+							"size": "30k"
+						},
+						{
+							"url": "../../images/sample.zip",
+							"file-name": "Sample ZIP File Name",
+							"type": "zip",
+							"size": "8k"
+						},
+						{
+							"url": "../../images/sample.dwg",
+							"file-name": "Sample File Name",
+							"type": "dwg",
+							"size": "12k"
+						}
+					]
+				},
+				"icon": "chevron-sm-down"
+
+			}
+		]
+	},
+	"imageURL": "../../images/1to1.jpg",
+	"carousel-item" : {
+		"title": "Carousel Item",
+		"imageURL": "http://lorempixel.com/251/251/business/",
+		"targetURL": "#CarouselItem"
+	},
+	
+	"tabs":{
+		"tab-content-name": "example-tabs",
+		"allow-all-closed": true,
+		"tab-items":[
+			{
+				"id": "tab-one",
+				"aria-selected": "true",
+				"active-class": "is-active",
+				"tab-title": "Tab One",
+				"icon":"chevron-sm-down",
+				"tab-panel-content": "<p>Tab One Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla justo mauris, rhoncus a ante sed, suscipit varius metus. Proin nec risus et risus blandit lobortis in sed justo. Donec cursus lectus urna, interdum finibus purus ultrices eu. Morbi tincidunt a lectus vitae congue. Nulla feugiat arcu vitae lacus viverra, id tempor arcu luctus. Duis ut nulla ipsum. Maecenas ut dolor lorem. Maecenas sit amet orci sapien. Mauris rhoncus orci et tortor egestas, ac tristique mi dapibus. Cras tincidunt nulla eget faucibus lacinia. Integer ac nisl venenatis, malesuada est eget, posuere neque. Vestibulum eu dui erat.</p><p>Curabitur bibendum fermentum orci ut porttitor. Fusce consequat mollis porta. Aenean at arcu lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam quis massa ut erat ullamcorper fringilla et ac lorem. Maecenas tristique ipsum ut dolor gravida pulvinar vel vitae turpis. Duis ipsum purus, aliquet et dui mattis, vehicula dictum nulla. Aenean imperdiet porttitor sapien, vel pulvinar lectus ornare at. Nullam facilisis, lorem ac efficitur vehicula, dui lacus facilisis massa, eu molestie odio ipsum at elit. Suspendisse in elementum leo.</p><p>Sed pharetra scelerisque erat facilisis cursus. In tempor, leo sed feugiat accumsan, metus nunc fringilla ex, a fermentum nunc dolor eget ligula.</p>"
+			},
+			{
+				"id": "tab-two",
+				"tab-title": "Tab Two",
+				"icon":"chevron-sm-down",
+				"tab-panel-content": "<p>Tab Two Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla justo mauris, rhoncus a ante sed, suscipit varius metus. Proin nec risus et risus blandit lobortis in sed justo. Donec cursus lectus urna, interdum finibus purus ultrices eu. Morbi tincidunt a lectus vitae congue. Nulla feugiat arcu vitae lacus viverra, id tempor arcu luctus. Duis ut nulla ipsum. Maecenas ut dolor lorem. Maecenas sit amet orci sapien. Mauris rhoncus orci et tortor egestas, ac tristique mi dapibus. Cras tincidunt nulla eget faucibus lacinia. Integer ac nisl venenatis, malesuada est eget, posuere neque. Vestibulum eu dui erat.</p><p>Curabitur bibendum fermentum orci ut porttitor. Fusce consequat mollis porta. Aenean at arcu lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam quis massa ut erat ullamcorper fringilla et ac lorem. Maecenas tristique ipsum ut dolor gravida pulvinar vel vitae turpis. Duis ipsum purus, aliquet et dui mattis, vehicula dictum nulla. Aenean imperdiet porttitor sapien, vel pulvinar lectus ornare at. Nullam facilisis, lorem ac efficitur vehicula, dui lacus facilisis massa, eu molestie odio ipsum at elit. Suspendisse in elementum leo.</p><p>Sed pharetra scelerisque erat facilisis cursus. In tempor, leo sed feugiat accumsan, metus nunc fringilla ex, a fermentum nunc dolor eget ligula.</p>"
+			},
+			{
+				"id": "tab-three",
+				"tab-title": "Tab Three",
+				"icon":"chevron-sm-down",
+				"tab-panel-content": "<p>Tab Three Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla justo mauris, rhoncus a ante sed, suscipit varius metus. Proin nec risus et risus blandit lobortis in sed justo. Donec cursus lectus urna, interdum finibus purus ultrices eu. Morbi tincidunt a lectus vitae congue. Nulla feugiat arcu vitae lacus viverra, id tempor arcu luctus. Duis ut nulla ipsum. Maecenas ut dolor lorem. Maecenas sit amet orci sapien. Mauris rhoncus orci et tortor egestas, ac tristique mi dapibus. Cras tincidunt nulla eget faucibus lacinia. Integer ac nisl venenatis, malesuada est eget, posuere neque. Vestibulum eu dui erat.</p><p>Curabitur bibendum fermentum orci ut porttitor. Fusce consequat mollis porta. Aenean at arcu lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam quis massa ut erat ullamcorper fringilla et ac lorem. Maecenas tristique ipsum ut dolor gravida pulvinar vel vitae turpis. Duis ipsum purus, aliquet et dui mattis, vehicula dictum nulla. Aenean imperdiet porttitor sapien, vel pulvinar lectus ornare at. Nullam facilisis, lorem ac efficitur vehicula, dui lacus facilisis massa, eu molestie odio ipsum at elit. Suspendisse in elementum leo.</p><p>Sed pharetra scelerisque erat facilisis cursus. In tempor, leo sed feugiat accumsan, metus nunc fringilla ex, a fermentum nunc dolor eget ligula.</p>"
+			}
+		]
+	},
+	"faceted-filters":{
+		"menu-items": [
+			{
+				"menu-header": "Material",
+				"icon": "chevron-sm-down",
+				"list-items": [
+					{
+						"id": "all-materials",
+						"label": "all materials",
+						"name": "materials"
+					},
+					{
+						"id": "wood",
+						"label": "wood",
+						"name": "materials"
+					},
+					{
+						"id": "metal",
+						"label": "metal",
+						"name": "materials"
+					}
+				]
+			},
+			{
+				"menu-header": "Collection",
+				"icon": "chevron-sm-down",
+				"list-items": [
+					{
+						"id": "all-collections",
+						"label": "all collections",
+						"name": "collections"
+					},
+					{
+						"id": "collection-one",
+						"label": "collection one",
+						"name": "collections"
+					},
+					{
+						"id": "collection-two",
+						"label": "collection two",
+						"name": "collections"
+					}
+				]
+				
+			},
+			{
+				"menu-header": "Product Type",
+				"icon": "chevron-sm-down",
+				"list-items": [
+					{
+						"id": "all-products",
+						"label": "all products",
+						"name": "products"
+					},
+					{
+						"id": "product-one",
+						"label": "product type one",
+						"name": "products"
+					},
+					{
+						"id": "product-two",
+						"label": "product type two",
+						"name": "products"
+					}
+				]
+				
+			}
+
+		] 
+	},
+	"productCarousel": {
+		"heading": "Sample Heading",
+		"carouselRows": [
+			{
+				"carousel-item-collection": [
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 1",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem1"
+						}
+					},
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 2",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem2"
+						}
+					},
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 3",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem3"
+						}
+					},
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 4",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem4"
+						}
+					},
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 5",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem5"
+						}
+					},
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 6",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem6"
+						}
+					},
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 7",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem7"
+						}
+					},
+					{
+						"carousel-item" : {
+							"title": "Carousel Item 8",
+							"imageURL": "../../images/1to1_product-thumb-med.jpg",
+							"targetURL": "#CarouselItem8"
+						}
+					}
+				]
+			}
+		]
+	},
+	"colors-options": {
+		"title": "Colors & Options",
+		"previewer": {
+			"selector": "large-swatch",
+			"width": "510",
+			"height": "510",
+			"default": {
+				"title": "Effects Cherry",
+				"caption": "MetalWorks Tegular in Effects Cherry",
+				"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH?wid=45&hei=45",
+				"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH"
+			}
+		},
+		"colors": [
+			{
+				"title": "Colors",
+				"swatches": [
+					{
+						"title": "Effects Cherry",
+						"caption": "MetalWorks Tegular in Effects Cherry",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH",
+						"isActive":  true
+					}, {
+						"title": "Effects Cherry Exterior",
+						"caption": "MetalWorks Tegular in Effects Cherry Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXCH"
+					}, {
+						"title": "Effects Dark Cherry",
+						"caption": "MetalWorks Tegular in Effects Dark Cherry",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXDC?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXDC"
+					}, {
+						"title": "Effects Dark Cherry Exterior",
+						"caption": "MetalWorks Tegular in Effects Dark Cherry Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXDC?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXDC"
+					}, {
+						"title": "Effects Maple",
+						"caption": "MetalWorks Tegular in Effects Maple",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXMP?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXMP"
+					}, {
+						"title": "Effects Maple Exterior",
+						"caption": "MetalWorks Tegular in Effects Maple Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXMP?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXMP"
+					}, {
+						"title": "Effects Oak",
+						"caption": "MetalWorks Tegular in Effects Oak",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXOK?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXOK"
+					}, {
+						"title": "Effects Oak Exterior",
+						"caption": "MetalWorks Tegular in Effects Oak Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXOK?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXOK"
+					}, {
+						"title": "Effects Walnut",
+						"caption": "MetalWorks Tegular in Effects Walnut",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWN?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWN"
+					}, {
+						"title": "Effects Walnut Exterior",
+						"caption": "MetalWorks Tegular in Effects Walnut Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWN?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWN"
+					}, {
+						"title": "Effects Walnut Espresso",
+						"caption": "MetalWorks Tegular in Effects Walnut Espresso",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWE?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWE"
+					}, {
+						"title": "Effects Walnut Espresso Exterior",
+						"caption": "MetalWorks Tegular in Effects Walnut Espresso Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWE?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_FXWE"
+					}, {
+						"title": "Gun Metal Grey",
+						"caption": "MetalWorks Tegular in Gun Metal Grey",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_MY?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_MY"
+					}, {
+						"title": "Gun Metal Grey Exterior",
+						"caption": "MetalWorks Tegular in Gun Metal Grey Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_MY?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_MY"
+					}, {
+						"title": "Silver Grey",
+						"caption": "MetalWorks Tegular in Silver Grey",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_SG?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_SG"
+					}, {
+						"title": "Silver Grey Exterior",
+						"caption": "MetalWorks Tegular in Silver Grey Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_SG?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_SG"
+					}, {
+						"title": "White",
+						"caption": "MetalWorks Tegular in White",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH"
+					}, {
+						"title": "White Exterior",
+						"caption": "MetalWorks Tegular in White Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH"
+					}
+				]
+			}
+		],
+		"perforations": [
+			{
+				"title": "Perforations",
+				"swatches": [
+					{
+						"title": "White Exterior",
+						"caption": "MetalWorks Tegular in White Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH"
+					}, {
+						"title": "White Exterior",
+						"caption": "MetalWorks Tegular in White Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH"
+					}, {
+						"title": "White Exterior",
+						"caption": "MetalWorks Tegular in White Exterior",
+						"thumbnailURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH?wid=45&hei=45",
+						"previewURL": "http://s7d2.scene7.com/is/image/Armstrong/abp_col_WH"
+					}
+				]
+			}
+		]
+	},
+	"product-browse-gallery": {
+		"title": "Product Browse Gallery",
+		"previewer": {
+			"selector": "main-image",
+			"width": "980",
+			"height":"980",
+			"default": 	{
+				"title": "Image 1",
+				"caption": "Caption for Image 1",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B?wid=75&hei=75&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B",
+				"isActive": true
+			}
+		},
+		"images": [
+			{
+				"title": "Image 1",
+				"caption": "Caption for Image 1",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B?wid=75&hei=75&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B",
+				"isActive": true
+			},
+			{
+				"title": "Image 2",
+				"caption": "Caption for Image 2",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1?wid=75&hei=75&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1"
+			}
+		]
+	},
+	"content-link":{
+		"url": "http://www.google.com",
+		"title": "Link to Google",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis efficitur nibh, ac mollis tortor bibendum sit amet. Cras vitae interdum orci. Nullam et ultricies nisl."
+	},
+	"search-result-content-link": {
+		"url" : "#",
+		"title" : "This is the Page Title of a Content Page Search Result",
+		"desc" : "This is the additional description which is pulled from the search result content."
+	},
+	"content-link-list":{
+		"list-heading": "Tools",
+		"each-content-link":[
+			{
+				"content-link":{
+					"url": "http://www.google.com",
+					"title": "Build a Ceiling Submittal",
+					"desc": "CSI format, includes seismic requirements"
+				}
+			},
+			{
+				"content-link":{
+					"url": "http://www.google.com",
+					"title": "Build a Ceiling Submittal",
+					"desc": "Just complete a simple form -- we take care of collecting and shipping all required literature, samples and MSDS sheets."
+				}
+			},
+			{
+				"content-link":{
+					"has-thumbnail" : null,
+					"url": "http://www.google.com",
+					"title": "Build a Ceiling Submittal",
+					"desc": "Just complete a simple form -- we take care of collecting."
+				}
+			}
+		]	
+	},
+	"search-results-content-link-list" : {
+		"content-links" : [
+			{
+				"search-result-content-link" : {
+					"url" : "#",
+					"title" : "MetalWorks Effects and WoodWorks Trim",
+					"desc" : "MetalWorks Effects and WoodWorks Trim Key Selection Attributes: Trim allows design continuity for Channeled, Concealed Linear, Tegular, and Vector® ceilings Create upturns for continuous visuals and clouds Available in..."
+				}
+			},
+			{
+				"search-result-content-link" : {
+					"url" : "#",
+					"title" : "Fine Fissured Ceilings",
+					"desc" : "...and 2' x 4' Square Lay-in; also available with higher acoustics 2' x 2' and 2' x 4' Tegular edges; also available with higher acoustics 2' x 4' Second Look offers a scored visual, creating squares or plank looks..."
+				}
+			},
+			{
+				"search-result-content-link" : {
+					"url" : "#",
+					"title" : "MetalWorks Effects Wood Looks",
+					"desc" : "...Vector in Effects Key Selection Attributes: Consistent and affordable wood look on standard 2' x 2' metal ceiling panels - Tegular, Vector and Vector Exterior - and Linear planks for interior and exterior applications..."
+				}
+			},
+			{
+				"search-result-content-link" : {
+					"url" : "#",
+					"title" : "TechZone for Mineral, Fiberglass, Metal and Wood Ceilings",
+					"desc" : "...TechZone™ Ceiling Systems with Optima® 30&quot; x 54&quot; and Optima 6&quot; x 60&quot; Technical Panels TechZone™ Ceiling System MetalWorks™ Tegular 2’ x 4’ with MetalWorks Technical Panels, Neo-Ray 7A Recessed Lighting..."
+				}
+			}
+		]
+	},
+	"photo-gallery-grid-list":{
+		"is-small": true,
+		"photo-gallery-grid-list-item":[
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+					"targetURL" : "#",
+					"gallery-name" : "Interventure",
+					"gallery-size" : "8",
+					"tag" : {
+						"tag-text" : "New!"
+					}
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+					"targetURL" : "#",
+					"gallery-name" : "Survey Monkey",
+					"gallery-size" : "2",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+					"targetURL" : "#",
+					"gallery-name" : "Foundation Campus",
+					"gallery-size" : "9",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+					"targetURL" : "#",
+					"gallery-name" : "John Wayne Airport",
+					"gallery-size" : "17",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/EX_MWSnpIn_IrvCC_08",
+					"targetURL" : "#",
+					"gallery-name" : "Irving Convention Center at Las Colinas",
+					"gallery-size" : "15",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/Paige_3.pp",
+					"targetURL" : "#",
+					"gallery-name" : "3Forty Grill",
+					"gallery-size" : "2",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_NS_CHRY_006D",
+					"targetURL" : "#",
+					"gallery-name" : "University of Tennessee, Neyland Stadium - East Club",
+					"gallery-size" : "6",
+					"tag" : {
+						"tag-text" : "New!"
+					}
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RSInfusions_HHendy_Gallery",
+					"targetURL" : "#",
+					"gallery-name" : "H. Hendy Associates",
+					"gallery-size" : "1",
+					"tag" : {
+						"tag-text" : "New!"
+					}
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_OptKE_AX_AnchrBnk_02",
+					"targetURL" : "#",
+					"gallery-name" : "Anchor Bank, branch of Anchor Farmington Bank, N.A.",
+					"gallery-size" : "3",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTinCp_Xmpf_LDC_10D",
+					"targetURL" : "#",
+					"gallery-name" : "Lancaster Dispensing Company",
+					"gallery-size" : "3",
+					"tag" : {
+						"tag-text" : "New!"
+					}
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_InfCn_KCRoy_27",
+					"targetURL" : "#",
+					"gallery-name" : "Kansas City Royals Kauffman Stadium",
+					"gallery-size" : "8",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/trading%20floor%20pano-2",
+					"targetURL" : "#",
+					"gallery-name" : "Dominion Energy Clearinghouse",
+					"gallery-size" : "6",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRH215_Nokia_112B",
+					"targetURL" : "#",
+					"gallery-name" : "Club Nokia at LA Live!",
+					"gallery-size" : "7",
+					"tag" : false
+				}
+			},
+			{
+				"grid-list-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_DupontFib_SerpMesh-02_C1",
+					"targetURL" : "#",
+					"gallery-name" : "DuPont Fibers Federal Credit Union",
+					"gallery-size" : "2",
+					"tag" : false
+				}
+			}
+		]	
+	},
+
+	"download-file-grid-list": {
+		"download-file-grid-list-item":[
+			{
+				"download-item": {
+					"width" : "438",
+					"height" : "438",
+					"imageURL" : "http://lorempixel.com/438/438/business/",
+					"targetURL" : "#",
+					"title" : "MetalWorks Tegular - Axiom MetalWorks Panel Installed on Suprafine Grid",
+					"fileList" : {
+						"fileItems":[
+							{
+								"url" : "#",
+								"file-type" : "PDF",
+								"file-size" : "212KB"
+							},
+							{
+								"url" : "#",
+								"file-type" : "DWG",
+								"file-size" : "424KB"
+							}
+						]
+					}
+				}
+			},
+			{
+				"download-item": {
+					"width" : "438",
+					"height" : "438",
+					"imageURL" : "http://lorempixel.com/438/438/business/?2",
+					"targetURL" : "#",
+					"title" : "MetalWorks Tegular - MetalWorks Cut Panel Edge Cap Installation",
+					"fileList" : {
+						"fileItems":[
+							{
+								"url" : "#",
+								"file-type" : "PDF",
+								"file-size" : "212KB"
+							},
+							{
+								"url" : "#",
+								"file-type" : "DWG",
+								"file-size" : "424KB"
+							}
+						]
+					}
+				}
+			},
+			{
+				"download-item": {
+					"width" : "438",
+					"height" : "438",
+					"imageURL" : "http://lorempixel.com/438/438/business/",
+					"targetURL" : "#",
+					"title" : "MetalWorks Tegular - MetalWorks Effects Perimeter Trim Installation",
+					"fileList" : {
+						"fileItems":[
+							{
+								"url" : "#",
+								"file-type" : "PDF",
+								"file-size" : "212KB"
+							},
+							{
+								"url" : "#",
+								"file-type" : "DWG",
+								"file-size" : "424KB"
+							}
+						]
+					}
+				}
+			},
+			{
+				"download-item": {
+					"width" : "438",
+					"height" : "438",
+					"imageURL" : "http://lorempixel.com/438/438/business/?2",
+					"targetURL" : "#",
+					"title" : "MetalWorks Tegular - MetalWorks Faceted Installation",
+					"fileList" : {
+						"fileItems":[
+							{
+								"url" : "#",
+								"file-type" : "PDF",
+								"file-size" : "212KB"
+							},
+							{
+								"url" : "#",
+								"file-type" : "DWG",
+								"file-size" : "424KB"
+							}
+						]
+					}
+				}
+			},
+			{
+				"download-item": {
+					"width" : "438",
+					"height" : "438",
+					"imageURL" : "http://lorempixel.com/438/438/business/",
+					"targetURL" : "#",
+					"title" : "MetalWorks Tegular - MetalWorks Faceted Perimeter Installation",
+					"fileList" : {
+						"fileItems":[
+							{
+								"url" : "#",
+								"file-type" : "PDF",
+								"file-size" : "212KB"
+							},
+							{
+								"url" : "#",
+								"file-type" : "DWG",
+								"file-size" : "424KB"
+							}
+						]
+					}
+				}
+			},
+			{
+				"download-item": {
+					"width" : "438",
+					"height" : "438",
+					"imageURL" : "http://lorempixel.com/438/438/business/?2",
+					"targetURL" : "#",
+					"title" : "MetalWorks Tegular - MetalWorks - Field Cut Border Panel Option",
+					"fileList" : {
+						"fileItems":[
+							{
+								"url" : "#",
+								"file-type" : "PDF",
+								"file-size" : "181KB"
+							},
+							{
+								"url" : "#",
+								"file-type" : "DWG",
+								"file-size" : "312KB"
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+
+	"collection-grid-list": {
+		"collection-grid-list-item":[
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+					"targetURL" : "#",
+					"title" : "Ultima",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Mineral Fiber"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+					"targetURL" : "#",
+					"title" : "WoodWorks",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Wood"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+					"targetURL" : "#",
+					"title" : "MetalWorks",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Metal"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										},
+										{
+											"value" : "Canopies & Clouds"
+										},
+										{
+											"value": "Ceilings-to-Wall"
+										},
+										{
+											"value" : "Exposed Structure"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+					"targetURL" : "#",
+					"title" : "Lyra",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Mineral Fiber"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/EX_MWSnpIn_IrvCC_08",
+					"targetURL" : "#",
+					"title" : "Infusions",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Mineral Fiber"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/Paige_3.pp",
+					"targetURL" : "#",
+					"title" : "Soundsoak",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Wood"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_NS_CHRY_006D",
+					"targetURL" : "#",
+					"title" : "Formations",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Metal"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										},
+										{
+											"value" : "Canopies & Clouds"
+										},
+										{
+											"value" : "Ceiling-to-Wall"
+										},
+										{
+											"value" : "Exposed Structure"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RSInfusions_HHendy_Gallery",
+					"targetURL" : "#",
+					"title" : "Metaphors",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Mineral Fiber"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_OptKE_AX_AnchrBnk_02",
+					"targetURL" : "#",
+					"title" : "Optima",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Mineral Fiber"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRH215_Nokia_112B",
+					"targetURL" : "#",
+					"title" : "Calla",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Wood"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTinCp_Xmpf_LDC_10D",
+					"targetURL" : "#",
+					"title" : "Armatuff",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Mineral Fiber"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										},
+										{
+											"value" : "Canopies & Clouds"
+										},
+										{
+											"value" : "Ceiling-to-Wall"
+										},
+										{
+											"value" : "Exposed Structure"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"collection-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/trading%20floor%20pano-2",
+					"targetURL" : "#",
+					"title" : "Canyon",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Material",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Mineral Fiber"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Finished Form",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "Panels"
+										}
+									]
+								}
+							},
+							{
+								"thead" : "Acoustics",
+								"tdList": {
+									"tdListItems":[
+										{
+											"value" : "High NRC Availabile"
+										},
+										{
+											"value" : "High CRC Available"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+
+	"design-file-grid-list": {
+		"design-file-grid-list-item":[
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			},
+			{
+				"design-file-item": {
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "../../images/design-layout-sample.jpg",
+					"targetURL" : "#",
+					"title" : "Layout 52: 6&quot; Technical Zone Configuration for Continuous Lighting (CAD, Revit)",
+					"table" : {
+						"table-rows":[
+							{
+								"thead" : "Ceiling Module",
+								"value" : "4&#39;"
+							},
+							{
+								"thead" : "On-Center Spacing",
+								"value" : "4&#39;-0&#34;"
+							},
+							{
+								"thead" : "Field Panel",
+								"value" : "24&#34; x 48&#34;"
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+
+	"document-table" : {
+		"table-rows" : [
+			{
+				"thead" : "6461M1",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "6461M1",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6461m1",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "9442U6A1 - MetalWorks Tegular 2x2",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6461M2",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "9444U6A2 - MetalWorks Tegular 2x2",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462m1",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "6462M1",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462M1",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "9683U6A1 - MetalWorks Tegular 2x2",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462m1",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "MetalWorks Tegular 24x24",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462M2",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "9685U6A2 - MetalWorks Tegular 2x2",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462m2",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "MetalWorks Tegular 24x24",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462M3",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "4704U6A2 - MetalWorks Tegular 2x2",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462m3",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "6462M3",
+					"size" : "12MB"
+				}
+			},
+			{
+				"thead" : "6462m3",
+				"downloadLink" : {
+					"url" : "#",
+					"type" : "zip",
+					"file-name" : "MetalWorks Tegular 24x24",
+					"size" : "12MB"
+				}
+			}
+		]
+	},
+
+	"case-study-grid-list":{
+		"case-study-grid-list-item":[
+			{
+				"case-study-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+					"targetURL" : "#",
+					"title" : "Designed Coves Using Axiom® Aluminum Perimeter Trim",
+					"file-type" : "PDF",
+					"file-size" : "163KB",
+					"tag" : {
+						"tag-text" : "New!"
+					}
+				}
+			},
+			{
+				"case-study-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+					"targetURL" : "#",
+					"title" : "Controlling Sound with Acoustical Clouds made from WoodWorks® Concealed Ceiling Panels",
+					"file-type" : "PDF",
+					"file-size" : "200KB",
+					"tag" : false
+				}
+			},
+			{
+				"case-study-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+					"targetURL" : "#",
+					"title" : "Creating a Distinctive Ceiling/Wall Shell System with Optima planks",
+					"file-type" : "PDF",
+					"file-size" : "180KB",
+					"tag" : false
+				}
+			},
+			{
+				"case-study-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+					"targetURL" : "#",
+					"title" : "A DC FlexZone™ Grid Based on the EMerge Alliance® Technology Standard for DC Power Distribution",
+					"file-type" : "PDF",
+					"file-size" : "168KB",
+					"tag" : false
+				}
+			},
+			{
+				"case-study-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/EX_MWSnpIn_IrvCC_08",
+					"targetURL" : "#",
+					"title" : "Warm Wood Welcomes Gatherers to New City Hall",
+					"file-type" : "PDF",
+					"file-size" : "173KB",
+					"tag" : false
+				}
+			},
+			{
+				"case-study-item":{
+					"width" : "980",
+					"height" : "980",
+					"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/Paige_3.pp",
+					"targetURL" : "#",
+					"title" : "Institute Design Focused on Natural Earth Properties Earns LEED Platinum",
+					"file-type" : "PDF",
+					"file-size" : "189KB",
+					"tag" : false
+				}
+			}
+		]	
+	},
+
+	"video-grid-list":{
+		"video-grid-list-item":[
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "What's New in Commercial Ceilings Fall 2015",
+					"length" : "6:22"
+				}
+			},
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "Axiom Direct Light Coves",
+					"length" : "3:19"
+				}
+			},
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "What's New in Commercial Ceilings Spring 2015",
+					"length" : "3:26"
+				}
+			},
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "Introducing our Sound Level Meter App",
+					"length" : "0:59"
+				}
+			},
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "Integrated Ceiling Solutions",
+					"length" : "3:12"
+				}
+			},
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "Westfield Santa Anita Case Study",
+					"length" : "2:02"
+				}
+			},
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "Drywall Grid System Case Study",
+					"length" : "2:54"
+				}
+			},
+			{
+				"video-item":{
+					"url" : "#",
+					"title" : "Ceiling ID Smartphone App",
+					"length" : "0:42"
+				}
+			}
+		]	
+	},		
+
+	"checkbox-form":{
+		"checkbox-items": [
+			{
+				"id": "all",
+				"label": "all"
+			},
+			{
+				"id": "product-one",
+				"label": "product type one"
+			},
+			{
+				"id": "product-two",
+				"label": "product type two"
+			}
+		]
+	},
+	"sidebar-contact":{
+		"heading": "Questions?",
+		"sub-heading": "Our product experts are here to help!",
+		"img-url": "../../images/sidebar-contact.jpg",
+		"chat-text": "Live Chat",
+		"phone": "800-499-6544"
+	},
+	"product-photo-gallery": {
+		"title": "Product Photo Gallery",
+		"previewer": {
+			"selector": "main-image",
+			"width": "980",
+			"height":"980",
+			"default": 	{
+				"title": "Image 1",
+				"caption": "Caption for Image 1",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B?wid=125&hei=125&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B",
+				"isActive": true
+			}
+		},
+		"images": [
+			{
+				"title": "Image 1",
+				"caption": "Caption for Image 1",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B?wid=125&hei=125&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/RS_MWVctRAL_AbCrk_10B",
+				"isActive": true
+			},
+			{
+				"title": "Image 2",
+				"caption": "Caption for Image 2",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1?wid=125&hei=125&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1"
+			},
+			{
+				"title": "Image 3",
+				"caption": "Caption for Image 3",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1?wid=125&hei=125&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1"
+			},
+			{
+				"title": "Image 4",
+				"caption": "Caption for Image 4",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1?wid=125&hei=125&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1"
+			},
+			{
+				"title": "Image 5",
+				"caption": "Caption for Image 5",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1?wid=125&hei=125&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1"
+			},
+			{
+				"title": "Image 6",
+				"caption": "Caption for Image 6",
+				"thumbnailURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1?wid=125&hei=125&fit=crop",
+				"previewURL": "http://s7-images.armstrong.com/is/image/Armstrong/XtraMicroPerfonpanel_1"
+			}
+		]
+
+	},
+	"mega-menu": {
+		"menu-items": [
+			{
+				"id": "ceilings-walls",
+				"title": "Ceilings & Walls",
+				"url": "#ceilings-walls",
+				"isActive": true,
+				"mega-menu-grid-list":{
+					"mega-menu-grid-list-item":[
+						{
+							"mega-menu-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+								"targetURL" : "#",
+								"title" : "Mineral Fiber"
+							}
+						},
+						{
+							"mega-menu-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+								"targetURL" : "#",
+								"title" : "Fiberglass"
+							}
+						},
+						{
+							"mega-menu-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+								"targetURL" : "#",
+								"title" : "BioAcoustic"
+							}
+						},
+						{
+							"mega-menu-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_NS_CHRY_006D",
+								"targetURL" : "#",
+								"title" : "Wood"
+							}
+						},
+						{
+							"mega-menu-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Metal"
+							}
+						},
+						{
+							"mega-menu-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/Paige_3.pp",
+								"targetURL" : "#",
+								"title" : "Translucent"
+							}
+						}
+					]
+				},
+				"ceilings-link-lists": [
+					{
+						"collapse-in-mobile" : true,
+						"linkList" : {
+							"heading" :  "More Ceilings Categories",
+							"linkItems" : [
+								{
+									"url" : "#",
+									"title" : "High Acoustics"
+								},
+								{
+									"url" : "#",
+									"title" : "Clouds & Canopies"
+								},
+								{
+									"url" : "#",
+									"title" : "Custom Ceilings"
+								},
+								{
+									"url" : "#",
+									"title" : "Green Ceilings"
+								},
+								{
+									"url" : "#",
+									"title" : "Integrated Ceiling Systems"
+								}
+							]
+						}
+					},
+					{
+						"collapse-in-mobile" : true,
+						"linkList" : {
+							"heading" :  "Installation Resources",
+							"linkItems" : [
+								{
+									"url" : "#",
+									"title" : "Installation Videos"
+								},
+								{
+									"url" : "#",
+									"title" : "Installation Manuals"
+								}
+							]
+						}
+					},
+					{
+						"collapse-in-mobile" : true,
+						"linkList" : {
+							"heading" :  "Inspiration & Learning",
+							"linkItems" : [
+								{
+									"url" : "#",
+									"title" : "Photos & Videos"
+								},
+								{
+									"url" : "#",
+									"title" : "Ceiling Glossary & FAQ"
+								},
+								{
+									"url" : "#",
+									"title" : "Ceiling Acoustics 101"
+								},
+								{
+									"url" : "#",
+									"title" : "Download Center"
+								}
+							]
+						}
+					},
+					{
+						"collapse-in-mobile" : false,
+						"linkList" : {
+							"heading" :  "Find Replacement Ceiling Tiles",
+							"headingUrl": "#headingURL",
+							"linkItems" : null
+						}
+					}
+				],
+				"walls-link-lists": [
+					{
+						"collapse-in-mobile" : true,
+						"linkList" : {
+							"heading" :  "Popular Walls Collections",
+							"linkItems" : [
+								{
+									"url" : "#",
+									"title" : "Infusions"
+								},
+								{
+									"url" : "#",
+									"title" : "Optima"
+								},
+								{
+									"url" : "#",
+									"title" : "SoundSoak"
+								}
+							]
+						}
+					},
+					{
+						"collapse-in-mobile" : true,
+						"linkList" : {
+							"heading" :  "Browse Walls by Material",
+							"linkItems" : [
+								{
+									"url" : "#",
+									"title" : "Mineral Fiber"
+								},
+								{
+									"url" : "#",
+									"title" : "Fiberglass"
+								},
+								{
+									"url" : "#",
+									"title" : "Translucent"
+								}
+							]
+						}
+					},
+					{
+						"collapse-in-mobile" : true,
+						"linkList" : {
+							"heading" :  "Other Popular Links",
+							"linkItems" : [
+								{
+									"url" : "#",
+									"title" : "Integrated Wall Systems"
+								},
+								{
+									"url" : "#",
+									"title" : "Walls Photo Gallery"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "suspension-systems",
+				"title": "Suspension Systems",
+				"url": "#suspension-systems",
+				"isActive": false,
+				"mega-menu-grid-list":{
+					"mega-menu-grid-list-item":[
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+								"targetURL" : "#",
+								"title" : "Mineral Fiber"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+								"targetURL" : "#",
+								"title" : "Fiberglass"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+								"targetURL" : "#",
+								"title" : "BioAcoustic (Rapidly Renewable)"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Wood"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Metal"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Translucent"
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "integrated-solutions",
+				"title": "Integrated Solutions",
+				"url": "#integrated-solutions",
+				"isActive": false,
+				"mega-menu-grid-list":{
+					"mega-menu-grid-list-item":[
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+								"targetURL" : "#",
+								"title" : "Mineral Fiber"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+								"targetURL" : "#",
+								"title" : "Fiberglass"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+								"targetURL" : "#",
+								"title" : "BioAcoustic (Rapidly Renewable)"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Wood"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Metal"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Translucent"
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "applications",
+				"title": "Applications",
+				"url": "#applications",
+				"isActive": false,
+				"photo-gallery-grid-list":{
+					"is-small": true,
+					"photo-gallery-grid-list-item":[
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+								"targetURL" : "#",
+								"gallery-name" : "Interventure",
+								"gallery-size" : "8",
+								"tag" : null
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+								"targetURL" : "#",
+								"gallery-name" : "Survey Monkey",
+								"gallery-size" : "2",
+								"tag" : false
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+								"targetURL" : "#",
+								"gallery-name" : "Foundation Campus",
+								"gallery-size" : "9",
+								"tag" : false
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"gallery-name" : "John Wayne Airport",
+								"gallery-size" : "17",
+								"tag" : false
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "performance",
+				"title": "Performance",
+				"url": "#performance",
+				"isActive": false,
+				"mega-menu-grid-list":{
+					"mega-menu-grid-list-item":[
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+								"targetURL" : "#",
+								"title" : "Mineral Fiber"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+								"targetURL" : "#",
+								"title" : "Fiberglass"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+								"targetURL" : "#",
+								"title" : "BioAcoustic (Rapidly Renewable)"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Wood"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Metal"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Translucent"
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "photos-videos",
+				"title": "Photos & Videos",
+				"url": "#photos-videos",
+				"isActive": false,
+				"mega-menu-grid-list":{
+					"mega-menu-grid-list-item":[
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+								"targetURL" : "#",
+								"title" : "Mineral Fiber"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+								"targetURL" : "#",
+								"title" : "Fiberglass"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+								"targetURL" : "#",
+								"title" : "BioAcoustic (Rapidly Renewable)"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Wood"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Metal"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Translucent"
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "technical-learning",
+				"title": "Technical & Learning",
+				"url": "#technical-learning",
+				"isActive": false,
+				"mega-menu-grid-list":{
+					"mega-menu-grid-list-item":[
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_TZ-Opt4x4_Intv_30",
+								"targetURL" : "#",
+								"title" : "Mineral Fiber"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/C_RS_Ss_SurMon_A",
+								"targetURL" : "#",
+								"title" : "Fiberglass"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWRadDGS_GatesF_12",
+								"targetURL" : "#",
+								"title" : "BioAcoustic (Rapidly Renewable)"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Wood"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Metal"
+							}
+						},
+						{
+							"grid-list-item":{
+								"width" : "980",
+								"height" : "980",
+								"imageURL" : "http://s7d2.scene7.com/is/image/Armstrong/RS_MWTor_JWA_40",
+								"targetURL" : "#",
+								"title" : "Translucent"
+							}
+						}
+					]
+				}
+	}
+		],
+		"more": {
+			"title": "More Categories"
+		},
+		"close": {
+			"title": "Close Menu"
+		}
+	}
+}
+	

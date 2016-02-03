@@ -1,0 +1,226 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+button, input[type=submit], input[type=button], a.btn {
+	@include button(false, $primary-accent, auto, $white);
+	color: $white;
+	outline: 0;
+	width: auto;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: $font-heavy;
+	font-family: $font;
+	padding: 1rem;
+	margin: 0;
+	border: none;
+	border-radius: $global-radius;
+	border-bottom: {
+		width: $border-med;
+		style: solid;
+		color: darken($primary-accent, 25%);
+	}
+	&:hover, &:active, &:focus {
+		color: $white;
+		background: $primary-link-hover;
+		border-bottom: {
+			color: darken($primary-link-hover, 25%);
+		}
+	}
+
+	&.disabled, &[disabled] {
+		border-color: $gray-text;
+		background: $disabled;
+	}
+
+	&.secondary-btn {
+		color: $primary-accent;
+		border: $border-med solid $primary-accent;
+		background: transparent;
+		padding: 0.85rem 0.5rem 0.75rem;
+		&.reversed {
+			color: $white;
+			border: $border-med solid $white;
+			&:hover, &:focus, &:active {
+				background: rgba($white, 0.25);
+				color: $white;
+				text-shadow: 1px 1px 2px rgba($primary-accent, 0.5);
+				border: $border-med solid $white;
+			}
+		}
+		&:hover, &:focus, &:active {
+			background: rgba($primary-link-hover, 0.15);
+			color: $primary-link;
+			border: $border-med solid $primary-link;
+		}
+		&.disabled, &[disabled] {
+			color: $gray-text;
+			background: transparent;
+			border: $border-med solid $gray-text;
+		}
+		/*&:after {
+			content: none;
+			margin: 0;
+		}*/
+	}
+
+	&.text-link {
+		border: 0;
+		padding: 0;
+		color: $primary-link;
+		background-color: transparent;
+		outline: none;
+
+		&:hover, &:active, &:focus {
+			color: $primary-link-hover;
+		}
+
+		&.disabled {
+			background: transparent;
+			color: $gray-text;
+		}
+	}
+
+	&.disabled, &[disabled] {
+		&:hover {
+			cursor: no-drop;
+			text-decoration: none;
+		}
+	}
+
+	&.full {
+		@include button-expand();
+	}
+}
+
+/*button, a.btn {
+	&:after {
+		@include iconBase;
+		content: '\e93c';
+		font-size: 0.8rem;
+	    font-weight: bold;
+	    margin-left: 0.5rem;
+	    line-height: 0.5rem;
+	    position: relative;
+	    top: 0.05rem;
+	}
+	&.text-link:after {
+		content: none;
+	}
+}*/
+
+$widget-name: 'secondary-btn';
+
+@mixin secondary-btn-colors($primary, $hover, $opacity:0.75) {
+	color: $primary;
+	border-color: $primary;
+
+	/*&:hover, &:focus {
+		color: $hover;
+		border-color: $hover;
+		background-color: transparentize($hover, $opacity);
+	}*/
+}
+
+.#{$widget-name} {
+
+	// @include button-base(false);
+	//@include button-base();
+	//@include button-style(transparent, true, false);
+	// @include button-size($padding, false, false);
+
+	text-decoration: none;
+
+	/*border: {
+		style: solid;
+		width: $border-med;
+	}*/
+
+	/*&, &--dark {
+		// default
+		@include secondary-btn-colors($primary-accent, $primary-accent);
+	}*/
+
+	/*&--reversed {
+		@include secondary-btn-colors($white, $white);
+	}*/
+
+	/*&--active {
+		@include secondary-btn-colors($dark-gray, $dark-gray);
+
+	}*/
+	
+
+	/*&--disabled, &[disabled] {
+		@include secondary-btn-colors($disabled, $disabled, 1);
+		&:hover {
+			cursor: no-drop;
+		}
+	}*/
+
+	/*&--small {
+
+		padding: $pad-half;
+	}
+
+	&--large {
+		padding: $pad-half;
+		font-size: 1.4rem;
+		font-weight: normal;
+	}
+
+	&--wide {
+		padding: $padding $padding * 4;
+	}*/
+
+	&--full {
+		// @include button-size($padding, true, false);
+		text-align: center;
+		@include button-expand();
+	}
+
+	[class^="icon-"], [class*=" icon-"], .icon {
+		font-size: rem-calc(24);
+		line-height: 1.25;
+		vertical-align: middle;
+		width: 1.5rem;
+		height: 1.5rem;
+		display: inline-block;
+		margin: -0.35rem 0.35rem 0 0;
+	}
+	&:after {
+		content: none;
+	}
+}
+
+a.btn.small {
+	font-size: rem-calc(13);
+}
+
+input[type=submit], input[type=button], a.btn.small {
+	padding: rem-calc(8px);
+	&.full {
+		padding:rem-calc(12px);
+	}
+}
+
+@media all and (min-width: $bp-med) {
+	button, input[type=submit], input[type=button] {
+		font-size: 0.875rem;
+		padding: rem-calc(14px) rem-calc(14px) rem-calc(13px);
+		&.wide {
+			min-width: 250px;
+		}
+	}
+	input[type=submit], input[type=button], a.btn.small {
+		padding: rem-calc(8px) rem-calc(12px) rem-calc(7px);
+		&.full {
+			padding:rem-calc(12px);
+		}
+	}
+	button {
+		&:after {
+			font-size: 0.7rem;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+$plugin-name: 'leed-snapshot';
+$lead-list: 'lead-list';
+
+
+.#{$plugin-name} {
+	.#{$lead-list}{
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 2rem;
+	}
+	li{
+		padding-bottom: 0.5rem;
+		font-size: rem-calc(14px);
+    	&:before {
+    		@include iconBase;
+    		content: '\e920';
+    		float: left;
+    		width: 2rem;
+    		font-size: 1.5rem;
+    		text-align: left;
+    		margin-left: -2rem;
+    	}
+	}
+}

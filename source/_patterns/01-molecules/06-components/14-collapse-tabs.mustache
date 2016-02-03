@@ -1,0 +1,18 @@
+<div class="switch-sites dropdown" data-toggle="dropdown-switch-sites{{ id }}">
+	<ul class="collapse-tabs inline-list">
+	  {{# linkList}}
+	  {{# linkItems}}
+	    <li>{{# url}}<a href="{{{url}}}">{{/ url}}{{title}}{{# url}}</a>{{/ url}}</li>
+	  {{/ linkItems}}
+	  {{/ linkList}}
+	</ul>
+	<div id="dropdown-switch-sites{{ id }}"  class="dropdown-pane hide-large" data-dropdown data-hover="true">
+		<ul>
+		  {{# dropdownList}}
+		  {{# linkItems}}
+		    <li>{{# url}}<a href="{{{url}}}">{{/ url}}{{title}}{{# url}}</a>{{/ url}}</li>
+		  {{/ linkItems}}
+		  {{/ dropdownList}}
+		</ul>
+	</div>
+</div>

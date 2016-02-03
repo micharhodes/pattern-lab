@@ -1,0 +1,16 @@
+{{# grid-list-item }}
+<div class="grid-list-item" data-equalizer-watch>
+	<figure class="photo-gallery-item" data-image-width="{{ width }}" data-image-height="{{ height }}" data-image-crop="true">
+		<a href="{{{ targetURL }}}">
+			<!-- USE THIS FOR SMALL IMAGE GRID
+			<img data-interchange="[{{{ imageURL }}}?wid=270&hei=270&fit=crop, small], [{{{ imageURL }}}?wid=304&hei=304&fit=crop, medium], [{{{ imageURL }}}?wid=280&hei=280&fit=crop, large] "> -->
+			<!-- USE THIS FOR LARGE IMAGE GRID -->
+			<img data-interchange="[{{{ imageURL }}}?wid=555&hei=555&fit=crop, small], [{{{ imageURL }}}?wid=470&hei=470&fit=crop, medium], [{{{ imageURL }}}?wid=590&hei=590&fit=crop, large] " alt="{{{ gallery-name }}}">
+			{{> atoms-tag }}
+		</a>
+		<figcaption>
+			<a href="{{{ targetURL }}}">{{ gallery-name }}</a><span>({{ gallery-size }} photos)</span>
+		</figcaption>
+	</figure>
+</div>
+{{/ grid-list-item }}

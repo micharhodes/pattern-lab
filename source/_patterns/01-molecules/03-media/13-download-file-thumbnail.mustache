@@ -1,0 +1,19 @@
+{{# download-item }}
+<div class="grid-list-item" data-equalizer-watch>
+	<figure class="download-file-item" data-image-width="{{ width }}" data-image-height="{{ height }}" data-image-crop="true">
+		<a href="{{{ targetURL }}}" target="_blank">
+			<img data-interchange="[{{{ imageURL }}}?wid=270&hei=270&fit=crop, small], [{{{ imageURL }}}?wid=304&hei=304&fit=crop, medium], [{{{ imageURL }}}?wid=280&hei=280&fit=crop, large] ">
+		</a>
+		<figcaption>
+			{{ title }}
+			{{# fileList}}
+				<ul class="inline-list">
+					{{# fileItems}}
+						<li>{{# url}}<a href="{{{ url }}}" target="_blank">{{/ url}}<span class="metadata">{{ file-type }} <span class="divider">|</span> {{ file-size }}</span>{{# url}}</a>{{/ url}}</li>
+					{{/ fileItems}}
+				</ul>
+			{{/ fileList}}
+		</figcaption>
+	</figure>
+</div>
+{{/ download-item }}

@@ -1,0 +1,120 @@
+/*------------------------------------*\
+    $TABLE OF CONTENTS
+\*------------------------------------*/
+/**
+ * VARIABLES..............................Declarations of Sass variables
+ * .....Colors
+ * .....Typography
+ * .....Layout
+ * .....Defaults
+ * .....Breakpoints
+ * MIXINS.................................Sass mixins
+ * RESET..................................Set reset defaults
+ * GLOBAL CLASSES.........................Set reset defaults
+ * GLOBAL ELEMENTS........................Establish global styles
+ * .....Main
+ * .....Headings
+ * .....Text-related elements (p, blockquote, lists)
+ * .....Defaults
+ * .....Breakpoints
+ * TYPOGRAPHY------------------------------
+ * MEDIA------------------------------
+ * LAYOUT------------------------------
+ * NAVIGATION------------------------------
+ * TOC To Be Continued
+ */
+
+@import "scss/generic/fonts";
+@import "scss/generic/variables";
+@import "scss/objects/icons";
+@import "scss/generic/mixins";
+@import "scss/generic/reset";
+
+@import "app"; // Temporary until SCSS project is complete
+
+@import "scss/vendor/flickity";
+@import "scss/vendor/motion-ui";
+@import "scss/vendor/font-awesome";
+@import "scss/vendor/icons";
+@import "scss/vendor/mixins";
+@import "scss/vendor/variables";
+
+
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+@import "scss/base/global-classes";
+@import "scss/base/colors";
+@import "scss/base/main";
+@import "scss/base/links";
+@import "scss/base/headings";
+@import "scss/base/text";
+@import "scss/base/lists";
+@import "scss/base/media";
+@import "scss/base/forms/base";
+@import "scss/base/tables";
+@import "scss/base/animation";
+@import "scss/objects/modal";
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+@import "scss/objects/layout";
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "scss/objects/breadcrumbs/base";
+@import "scss/objects/header";
+@import "scss/objects/mega-menu";
+@import "scss/objects/page-title-section/base";
+@import "scss/objects/nav";
+@import "scss/objects/main";
+@import "scss/objects/footer";
+
+
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+@import "scss/objects/text";
+
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+// @import "scss/objects/view/sprite";
+// @import "scss/objects/country-flags";
+@import "scss/objects/buttons/_base";
+@import "scss/objects/hero/base";
+@import "scss/objects/blocks";
+@import "scss/objects/lists";
+@import "scss/objects/grid-lists";
+@import "scss/objects/videos";
+@import "scss/objects/tooltip";
+@import "scss/objects/accordion";
+@import "scss/objects/tabs";
+@import "scss/objects/sections";
+@import "scss/objects/article";
+@import "scss/objects/comments";
+@import "scss/objects/messaging";
+@import "scss/objects/stat-cards";
+@import "scss/objects/category-tile";
+@import "scss/objects/leed-snapshot";
+@import "scss/objects/tables";
+@import "scss/objects/three-col-contact";
+@import "scss/objects/environmental-profile";
+@import "scss/objects/in-page-nav";
+@import "scss/objects/in-page-tabs";
+@import "scss/objects/carousels";
+@import "scss/objects/finder-widgets";
+@import "scss/objects/media";
+@import "scss/objects/colors-and-options";
+@import "scss/objects/browse-result";
+@import "scss/objects/product-browse-gallery";
+@import "scss/objects/faceted-filtering";
+@import "scss/objects/product-photo-gallery";
+@import "scss/objects/search-results";
+@import "scss/objects/sidebar-contact";
+@import "scss/objects/content-link-list";

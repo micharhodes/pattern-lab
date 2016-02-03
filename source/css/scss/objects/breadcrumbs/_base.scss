@@ -1,0 +1,81 @@
+$plugin-name: 'breadcrumbs';
+
+@mixin breadcrumb-divider($divider-icon) {
+    color: $gray-text;
+    content: '#{$divider-icon}';
+    margin: 0 0.35rem;
+    position: relative;
+    top: 1px;
+    opacity: 1;
+    speak: none;
+    font: {
+        family: 'armstrongicon';
+        style: normal;
+        weight: normal;
+        variant: normal;
+        size: rem-calc(12);
+    }
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.#{$plugin-name} {
+
+    @include clearfix;
+    list-style: none;
+    margin: 1rem 0 0.75rem 0;
+
+    // Item wrapper
+    li {
+        &::before {
+            @include breadcrumb-divider('\e93b');
+            margin-left: 0;
+        }
+        &:not(:last-child) {
+            color: $gray-text;
+        }
+        &:not(:nth-last-child(2)) {
+            display: none;
+        }
+        float: #{$global-left};
+        color: $dark-gray;
+        cursor: default;
+        margin: 0;
+        font-size: rem-calc(14);
+        text-transform: none;
+    }
+
+    // Page links
+    a { 
+        color: inherit;
+        &:hover {
+            text-decoration: underline;
+            color: $primary-link-hover;
+        }
+    }
+
+    &__title { display: none;}
+
+    @include breakpoint(medium) {
+        li {
+            &:not(:last-child)::after {
+                @include breadcrumb-divider('\e93c');
+            }
+            &:not(:nth-last-child(2)) {
+                display: block;
+            }
+            &::before {
+                content: '';
+                display: none;
+            }
+        }
+        .#{$plugin-name}__back {
+            display: none;
+        }
+        
+        .#{$plugin-name}__title {
+            display: inline-block;
+        }
+    }
+}

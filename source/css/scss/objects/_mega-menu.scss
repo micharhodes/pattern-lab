@@ -1,0 +1,655 @@
+
+@if true {
+	//Experiment-JY: @if is used to define scope
+
+	$plugin-name: 'mega-menu';
+	$fx-duration: 666ms;
+	$fx-timing: ease-in;
+	$max-height: 2560px;
+
+	@mixin colorState() {
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			display: block;
+			content: '';
+			width: 100%;
+			height: rem-calc(5);
+			background-color: $primary-accent;
+		}
+	}
+
+	.#{$plugin-name} {
+
+	    @include breakpoint(medium up) {
+	    	position: relative;
+	    }
+
+
+		@include breakpoint(small down) {
+			[data-multi-toggle-group] {
+				margin-left: rem-calc(-24px);
+				margin-right: rem-calc(-24px);
+
+				&:not(.is-open) {
+					.multi-toggle__panel {
+						max-height: 0px;
+
+					}
+					.multi-toggle__toggler {
+						display: block;
+						border-bottom-width: 1px;
+
+						&:after {
+							transform: rotate(0deg);
+						}
+
+						&:hover {
+							&:after {
+								transform: rotate(90deg);
+							}
+						}
+
+						h4, a {
+							color: $black;
+						}
+					}
+				}
+
+				.multi-toggle__panel {
+					//padding-left: rem-calc(16px);
+					//padding-right: rem-calc(16px);
+					max-height: 999px;
+					overflow: hidden;
+					border-left: 1px solid $stroke-color;
+					border-right: 1px solid $stroke-color;
+					//border-top: 1px solid $stroke-color;
+					background-color: $white;
+					padding: 0 rem-calc(24);
+
+					// EyeCandy - BEGIN
+
+					@include breakpoint(small down) {
+						transition: {
+							property: max-height;
+							duration: 250ms;
+						}
+					}
+
+					@include breakpoint(medium) {
+
+					}
+
+					// EyeCandy - END
+				}
+				.multi-toggle__toggler {
+					$tg: rem-calc(16);  //toggle gutter
+					margin-top: -1px;
+					//padding-left: rem-calc(16px);
+					//padding-right: rem-calc(16px)+ $tg;
+					padding: 0 rem-calc(24);
+
+					border: 1px solid $stroke-color;
+					//border-bottom-width: 0;
+					cursor: pointer;
+					user-select: none;
+					position: relative;
+
+					@include makeIcon('chevron-sm-down', 'after');
+
+					a {
+						color: $primary-accent;
+					}
+
+					&:after {
+						color: $gray-text;
+						position: absolute;
+						right: $tg;
+						top: calc(#{-($tg/2)} + 50%);
+						transform: rotate(270deg);
+						transition: {
+							property: transform;
+							duration: 500ms;
+						}
+					}
+
+					> * {
+						display: inline-block;
+					}
+
+					h4 {
+						margin-top: 0.875rem;
+						margin-bottom: 0.875rem;
+						font-size: rem-calc(16);
+						padding-right: 1rem;
+					}
+				}
+			}
+			.link-group h4 {
+				margin-top: 0.875rem;
+				margin-bottom: 0.875rem;
+				font-size: rem-calc(16);
+				padding-right: 1rem;
+			}
+			button.see-all {
+				margin-top: 1.5rem;
+			}
+			hr {
+				display: none;
+			}
+		}
+	}
+	.scroll-clip {
+
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+	.#{$plugin-name + '__categories'} {
+    	@include grid-col-row();
+    	@extend .heavy-caps;
+    	font-size: rem-calc(16);
+		margin-bottom: -17px;
+	    list-style: none;
+	    white-space: nowrap;
+	    line-height: 0;
+	    overflow: {
+	    	x: scroll;
+	    	y: hidden;
+	    }
+		@include breakpoint(medium) {
+			&:after {
+				// This Simulates the bottom border allowing the active beacon to overlap it.
+				display: inline-block;
+				position: absolute;
+				height: 0px;
+				width: 100%;
+				left: 0;
+				bottom: 0px;
+				border-bottom: rem-calc(1) solid $stroke-color;
+				z-index: 20;
+			}
+		}
+
+	}
+
+	.#{$plugin-name + '__menu-item'} {
+		display: inline-block;
+		padding: 0;
+		margin-top: 0;
+		margin-left: rem-calc(20);
+		text-align: center;
+		text-overflow: ellipsis;
+
+		&:first-of-type {
+			margin-left: rem-calc(7);
+			
+			@include breakpoint(medium) {
+				margin-left: rem-calc(14);
+			}
+		}
+
+		&:not(.is-active):hover {
+			.#{$plugin-name + '__caption'} {
+				a {
+					color: $primary-link-hover
+				}
+			}
+		}
+
+		&:not(:first-of-type):not(.#{$plugin-name + '__menu-more'}) {
+
+			@include breakpoint(small down) {
+			display: none;
+			}
+
+		}
+		@include breakpoint(large) {
+			margin-left: rem-calc(30);
+		}
+	}
+
+	.#{$plugin-name + '__menu-more'} {
+		@include breakpoint(medium up) {
+			display: none;
+		}
+	}
+
+	.#{$plugin-name + '__caption'} {
+		padding: rem-calc(20) 0;
+		display: block;
+		cursor: pointer;
+		position: relative;
+		width: 100%;
+
+		@include colorState;
+
+		&:before {
+			transition: width $fx-duration $fx-timing;
+			width: 0%;
+		}
+
+		a {
+			margin: rem-calc(-28) 0;
+			line-height: 1;
+		}
+
+		@include breakpoint(large) {
+			padding: rem-calc(28) 0;
+		}
+
+		.#{$plugin-name + '--is-open'} > & {
+			//@include colorState;
+
+			&:before {
+				//width: 100%;
+			}
+
+			&:after {
+				@include breakpoint(medium up) {
+
+				// ARROW
+					$blockSize: rem-calc(10) !default;
+					display: block;
+					content: '';
+					position: absolute;
+					border: {
+						width: 1px;
+						style: solid;
+						color: $stroke-color;
+						bottom-color: transparent;
+						right-color: transparent;
+					}
+
+					width: $blockSize;
+					height: $blockSize;
+					bottom: -($blockSize / 2);
+					left: calc( 50% - #{$blockSize / 2});
+					transform: rotate(45deg);
+					background: $light-gray;
+					z-index: 100;
+				}
+
+			}
+
+			a {
+				color: $dark-gray;
+
+				&:hover {
+					
+					color: $dark-gray;
+				}
+			}
+		}
+
+		.#{$plugin-name + '--is-active'} & {
+			@include colorState;
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+
+	.#{$plugin-name + '__panels'} {
+
+		margin: 0;
+		// outline: 1px solid red;
+		@include breakpoint(small down) {
+			@include grid-col-row();
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+
+			.#{$plugin-name + '__categories'} {
+				overflow-x: hidden;
+			}
+			.#{$plugin-name + '__menu-item'} {
+				display: none;
+
+				&:not(:first-of-type) {
+					display: block;
+				}
+			}
+		}
+
+		@include breakpoint(medium up) {
+			// @include grid-col-row();
+			#menu-more-categories {
+				display: none;
+			}
+		}
+
+	}
+
+	.#{$plugin-name + '__dropdown'} {
+		//display:none messes with transitions.  Instead, position off-canvas.
+		position: absolute;
+		left: -100%;
+		width: 100%;
+		max-height: 0;
+		margin-top: 0;
+		z-index: 10;
+		overflow: hidden;
+
+		background-color: $light-gray;
+		border: {
+			bottom: rem-calc(1) solid $stroke-color;
+		}
+
+		// EyeCandy - BEGIN -- CLOSING
+
+		@include breakpoint(small down) {
+			//max-width: 0;
+			left: -100%;
+			transition: {
+				property: max-height, left;
+				duration: $fx-duration, $fx-duration;
+				timing-function: $fx-timing, $fx-timing;
+				delay: $fx-duration, 0ms;
+			}
+		}
+
+		@include breakpoint(medium) {
+
+			transition: {
+				property: max-height, left;
+				duration: $fx-duration, 0ms;
+				timing-function: $fx-timing, $fx-timing;
+				delay: 0ms, $fx-duration;
+
+			}
+		}
+
+		// EyeCandy - END
+
+		@include grid-row(null, collapse, 100%, true, 0);
+
+		&.#{$plugin-name + '--is-open'} {
+
+			// EyeCandy - BEGIN -- OPENING
+			z-index: 100;
+
+			@include breakpoint(small down) {
+				transition: {
+					property: left ;
+					duration: $fx-duration;
+					timing-function: $fx-timing;
+					delay: 0ms, 0ms;
+				}
+			}
+
+			@include breakpoint(medium) {
+
+				transition: {
+					property: max-height, left;
+					duration: $fx-duration, 0ms;
+					timing-function: $fx-timing, $fx-timing;
+					delay: 0ms, 0ms;
+				}
+			}
+
+			// EyeCandy - END
+
+
+			max-height: $max-height;
+			left: 0;
+			box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.3);
+			.#{$plugin-name + '__panel'} {
+				transform: translateY(0) translateX(0);
+			}
+		}
+
+	}
+
+	.#{$plugin-name + '__panel'} {
+		@include grid-column-row(0);
+		padding-bottom: 1.5rem;
+
+		// EyeCandy - BEGIN
+
+		@include breakpoint(small down) {
+			//transform: translateX(-100%);
+			transition: {
+				property: transform;
+				duration: $fx-duration;
+				timing-function: $fx-timing;
+				delay: 0s;
+			}
+		}
+
+		@include breakpoint(medium) {
+			//JY: Decided that sliding container down in this method is problematic because the timing cannot be synced with max-height.
+			// consider adding an extra wrapper within the __dropdown to contain the bg and translate that instead.
+			//transform: translateY(-100%);
+			//transition: {
+			//	property: transform;
+			//	duration: $fx-duration;
+			//	timing-function: $fx-timing;
+			//	delay: 0s;
+			//}
+		}
+		// EyeCandy - END
+
+		.#{$plugin-name + '--is-open'} & {
+		}
+
+	}
+	
+	.#{$plugin-name + '__close'} {
+		@include clearfix();
+		float: right;
+		font-weight: normal;
+		text-transform: none;
+		font-family: $font-secondary;
+		font-size: rem-calc(14);
+		color: $gray-text!important;
+		
+		&:hover {
+			color: $tertiary-link-hover ;
+		}
+
+		.icon-x {
+			font-size: rem-calc(11);
+			vertical-align: middle;
+			margin-left: rem-calc(8px);
+		}
+		.#{$plugin-name + '__close-label'} {
+			display: none;
+		}
+
+		@include breakpoint(medium) {
+			
+			.#{$plugin-name + '__close-label'} {
+				display: inline-block;
+				padding-right: 0.5rem;
+			}
+		}
+	}
+
+	.#{$plugin-name + '__content'} {
+		min-height: 320px;
+		margin-bottom: rem-calc(14);
+		@include grid-col-row();
+		@include breakpoint(small down) {
+			background-color: $light-gray;
+		}
+
+		//.carousel, .carousel-multi-rows {
+		//	h4 {
+		//		text-align: left;
+		//		@include breakpoint(small down) {
+		//			font-size: rem-calc(17);
+		//		}
+		//	}
+		//	.button-group {
+		//		display: none;
+		//	}
+		//}
+        //
+		//.block-carousel-item {
+		//	padding: 7px;
+        //
+		//	.carousel-thumbnail .carousel-thumbnail-row .b-text {
+		//		font-size: rem-calc(16);
+		//	}
+		//}
+
+		h3 {
+			text-align: left;
+			font-size: rem-calc(22);
+			span.icon {
+				font-size: rem-calc(15);
+				padding-left: rem-calc(8);
+				font-weight: $font-bold;
+			}
+
+			@include breakpoint(small down) {
+				margin-top: rem-calc(24);
+			}
+		}
+		h4 {
+			font-size: rem-calc(16);
+		}
+		figcaption {
+			@extend .heavy-caps;
+			text-align: center;
+			font-size: 1rem;
+			line-height: 1;
+		}
+		@include breakpoint(medium) {
+			h4, figcaption {
+				font-size: rem-calc(14);
+			}
+			.link-group {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	.#{$plugin-name + '__header'} {
+
+		@include breakpoint(small down) {
+			@include grid-column-row();
+			background-color: $white;
+			border-bottom: 1px solid $stroke-color;
+			margin-top: -1.2rem;
+			padding-top: rem-calc(10);
+			padding-bottom: rem-calc(10);
+		}
+	}
+
+	.#{$plugin-name + '__header-title'} {
+		@extend .heavy-caps;
+		font-size: 1rem;
+		@include breakpoint(medium up) {
+			display: none;
+		}
+	}
+
+	.mega-menu-grid-list {
+		overflow: hidden;
+		padding: 0;
+		margin-right: -0.4375rem;
+		margin-left: -0.4375rem;
+		margin-bottom: 1rem;
+		float: none;
+		width: calc(100% + 1.75rem);
+		&> div.row {
+			margin-bottom: -20px;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		@include breakpoint(medium) {
+			overflow: auto;
+			float: inherit;
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+			padding-left: 0.375rem;
+			padding-right: 0.375rem;
+			&> div.row {
+				margin-bottom: 0;
+				margin-right: -0.75rem;
+				margin-left: -0.75rem;
+			}
+		}
+		@include breakpoint(large) {
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+			&> div.row {
+				margin-right: -1rem;
+				margin-left: -1rem;
+			}
+		}
+		.grid-list-container {
+			overflow-x: scroll;
+			padding-bottom: 20px;
+			margin-right: 0;
+			margin-left: 0;
+			@include breakpoint(medium) {
+				overflow-x: hidden;
+				padding-bottom: 0;
+			}
+		}
+		.grid-list {
+			display: table;
+			white-space: nowrap;
+			&> .column {
+				padding-top: 0;
+				padding-bottom: 0;
+				float: none;
+				display: table-cell;
+				border-bottom: none;
+				border-right: none;
+				white-space: normal;
+				&:first-child {
+					padding-left: 0.875rem;
+				}
+				&:last-child {
+					padding-right: 0.875rem;
+				}
+			}
+			.grid-list-item {
+				width: 120px;
+			}
+			@include breakpoint(medium) {
+				display: block;
+				white-space: normal;
+				@extend .medium-up-6;
+				&> .column {
+					padding-top: rem-calc(6);
+					padding-bottom: rem-calc(12);
+					float: left;
+					display: block;
+					padding-left: 0.35rem;
+					padding-right: 0.35rem;
+					&:first-child {
+						padding-left: 0.35rem;
+					}
+					&:last-child {
+						padding-right: 0.35rem;
+					}
+				}
+				.grid-list-item {
+					width: auto;
+				}
+			}
+			@include breakpoint(large) {
+				@extend .large-up-6;
+				&> .column {
+					padding-left: 0.5rem;
+					padding-right: 0.5rem;
+					&:first-child {
+						padding-left: 0.5rem;
+					}
+					&:last-child {
+						padding-right: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}

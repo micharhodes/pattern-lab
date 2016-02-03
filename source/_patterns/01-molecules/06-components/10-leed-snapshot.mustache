@@ -1,0 +1,11 @@
+<div class="leed-snapshot">
+  {{# leedList}}
+  {{# heading }}<h4>{{ heading }}</h4>{{/ heading }}
+	  <ul class="lead-list">
+	  {{# leedItems}}
+	    <li>{{ title }}</li>
+	  {{/ leedItems }}
+	  </ul>
+	  {{# action }}{{# url}}<a href="{{{url}}}" alt="{{alt}}" class="btn text-link">{{/ url}}{{ action }}{{# url }}</a>{{/ url }}   {{/ action}}
+  {{/ leedList}}
+</div>

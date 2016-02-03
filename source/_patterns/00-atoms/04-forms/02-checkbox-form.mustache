@@ -1,0 +1,18 @@
+{{# checkbox-form }}
+	<form action="{{action}}">
+	    <fieldset class="options">
+	        {{# legend }}<legend>{{ legend }} <abbr title="Required">*</abbr></legend>{{/ legend }}
+	        <ul class="checkboxes">
+	        	{{# checkbox-items }}
+	            <li class="checkbox-item">
+	            	<input id="{{id}}" name="checkbox" type="checkbox" checked="{{checked}}">
+	            	<label for="{{id}}">
+	            		<span class="icon-check"></span>
+	            		{{label}}
+	            	</label>
+	            </li>
+	            {{/ checkbox-items }}
+	        </ul>
+	    </fieldset>
+	</form>
+{{/ checkbox-form }}

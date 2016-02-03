@@ -1,0 +1,12 @@
+{{ # breadcrumbs }}
+<nav aria-label="You are here:" role="navigation">
+	<ul class="breadcrumbs {{ # forceBack }}breadcrumbs--back {{ / forceBack }}">
+	{{ # crumbs }}
+		<li>
+			{{ # url }}<a href="{{ url }}">{{ / url }}<span class="breadcrumbs__title">{{ title }}</span><span class="breadcrumbs__back">{{ backText }}</span>{{ # url }}</a>{{ / url }}
+		</li>
+	{{ / crumbs }}
+		<li><span class="breadcrumbs__title">{{ title }}</span></li>
+	</ul>
+</nav>
+{{ / breadcrumbs }}

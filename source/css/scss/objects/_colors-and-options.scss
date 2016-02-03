@@ -1,0 +1,128 @@
+.colors-and-options {
+	.swatch-container {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	h5 {
+		margin-bottom: 1rem;
+	}
+	.swatches{
+		margin: 0;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	position:absolute;
+	left: 0;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	padding: 3px 0 20px 5px;
+	}
+
+	.edge-options {
+		.column {
+			margin-bottom: rem-calc(20);
+		}
+		figure {
+			border: 1px solid $stroke-color;
+			background: $white;
+			div {
+				height: 6.5rem;
+			}
+			img {
+				@include vertical-align;
+				padding: 1rem;
+				margin-bottom: 0;
+				display: block;
+				max-height: 100%;
+				margin: 0 auto;
+			}
+			figcaption {
+				border-top: 1px solid $stroke-color;
+				text-align: center;
+				padding: rem-calc(8) rem-calc(5);
+				background: $light-gray;
+			}
+		}
+		@include breakpoint(medium) {
+			figure {
+				div {
+					height: 7.5rem;
+				}
+			}
+		}
+		@include breakpoint(large) {
+			border-left: 1px solid $stroke-color;
+			padding-left: 2rem;
+			margin-top: 0;
+		}
+	}
+}
+
+/* COLOR SWATCHES */
+
+.swatch {
+	display: block;
+	border-radius: 50%;
+	text-indent: -9999px;
+}
+
+.swatch-container {
+	position: relative;
+	overflow: hidden;
+	height: 50px;
+	width: 100%;
+	border-left: 1px solid $stroke-color;
+	border-right: 1px solid $stroke-color;
+	margin: 0.5rem 0 1.5rem;
+}
+
+.swatches {
+	
+	li {
+		display: inline-block;
+		margin: rem-calc(1);
+		&:last-child {
+			margin-right: 5px;
+		}
+		a {
+			@extend .swatch;
+			width: 44px;
+			height: 44px;
+			border: 3px solid $white;
+			box-shadow: 0 0 0 1px rgba(0,0,0,0.12);
+			&:hover, &:focus, &.active {
+				box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
+				border: 2px solid $white;
+			}
+			&.active {
+				box-shadow: 0 0 2px 2px rgba(55,29,136,0.5);
+			}
+			span {
+				@extend .is-vishidden;
+			}
+		}
+	}
+}
+
+@include breakpoint(medium) {
+	.colors-and-options {
+		.swatch-container{
+			overflow: auto;
+			height: auto;
+			border-left: none;
+			border-right: none;
+		}
+		.swatches {
+			white-space: normal;
+			overflow-x: auto;
+			overflow-y: auto;
+			position: static;
+			height: auto;
+			padding: 2px;
+		}
+	}
+}

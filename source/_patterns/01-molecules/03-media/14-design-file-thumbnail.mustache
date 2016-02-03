@@ -1,0 +1,24 @@
+{{# design-file-item }}
+<div class="grid-list-item" data-equalizer-watch>
+	<figure class="design-file-item" data-image-width="{{ width }}" data-image-height="{{ height }}" data-image-crop="true">
+		<a href="{{{ targetURL }}}">
+			<img data-interchange="[{{{ imageURL }}}?wid=270&hei=270&fit=crop, small], [{{{ imageURL }}}?wid=304&hei=304&fit=crop, medium], [{{{ imageURL }}}?wid=280&hei=280&fit=crop, large] ">
+		</a>
+		<figcaption>
+			<a href="{{{ targetURL }}}">{{{ title }}}</a>
+			<table class="summary">
+				{{# table }}
+				<tbody>
+					{{# table-rows }}
+					<tr>
+						<th>{{{ thead }}}</th>
+						<td>{{{ value }}}</td>
+					</tr>
+					{{/ table-rows }}
+				</tbody>
+				{{/ table }}
+			</table>
+		</figcaption>
+	</figure>
+</div>
+{{/ design-file-item }}

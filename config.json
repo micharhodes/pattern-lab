@@ -1,0 +1,53 @@
+ {
+ 	"patterns" : {
+ 		"source" : "./source/_patterns/",
+ 		"public" : "./public/patterns/"
+ 	},
+	"styleGuideExcludes": [
+		"templates",
+		"pages"
+	],
+ 	"ignored-extensions" : ["scss", "DS_Store", "less"],
+ 	"ignored-directories" : ["scss"],
+ 	"debug": true,
+ 	"ishControlsVisible": {
+ 		"s": true,
+ 		"m": true,
+ 		"l": true,
+ 		"full": true,
+ 		"random": true,
+ 		"disco": true,
+ 		"hay": true,
+ 		"mqs": true,
+ 		"find": true,
+ 		"views-all": true,
+ 		"views-annotations": true,
+ 		"views-code": true,
+ 		"views-new": true,
+ 		"tools-all": true,
+ 		"tools-sync": true,
+ 		"tools-shortcuts": true,
+ 		"tools-docs": true
+ 	},
+  "patternStates": {
+      "Statuses": {
+        "complete": "green",
+        "inreview": "yellow",
+        "inprogress": "red"
+      },
+      "colors" : "complete",
+      "buttons" : "inreview",
+      "cta" : "inreview",
+      "address" : "inprogress",
+      "heading-group" : "inreview",
+      "blockquote-with-citation" : "complete",
+      "text-fields" : "inprogress",
+      "select-menu" : "inprogress",
+      "checkbox" : "inprogress",
+      "radio-buttons" : "inprogress",
+      "html5-inputs" : "inprogress"
+  },
+  "patternExportKeys": [],
+  "patternExportDirectory": "./pattern_exports/",
+  "baseurl" : ""
+ }

@@ -1,0 +1,92 @@
+
+$plugin-name: 'faceted-filtering';
+
+
+.#{$plugin-name} {
+	background: $dark-gray;
+	border-radius: $global-radius;
+	display: inline-block;
+	.dropdown.menu{
+		.submenu{
+			width: 300px;
+			li{
+				width: 100%;
+				padding: 0 0.5rem;
+				span[class^="icon"]::before{
+					width: 1.5rem;
+					display: inline-block;
+				}
+				input[type="checkbox"]:checked + label span{
+					text-indent: -0.08rem;
+				}
+			}
+		}
+		li{
+			margin-top: 0;
+			@include breakpoint(small down) {
+				width: 100%;
+			}
+			@include breakpoint(medium) {
+				width: auto;
+			}
+			.icon-chevron-sm-down:before{
+				right: 1rem;
+			    position: absolute;
+			    top: 45%;
+			    color: #fff;
+			    font-size: 0.5rem;
+			    transform: rotate(0deg);
+			    transition: {
+					property: transform;
+					duration: 500ms;
+				}
+			}
+			a{
+				color: $white;	
+				text-transform: uppercase;
+				size: $font-size-sm;
+				font-weight: $font-bold;
+				padding: $pad-and-half 2.5rem $pad-and-half $pad-and-half !important;	
+			}
+			&.is-active{
+				> a.icon-chevron-sm-down{
+					background: $light-gray;
+					border-left: $stroke-color;
+					border-right: $stroke-color;
+					border-top: $stroke-color;
+					color: $dark-gray;
+					&::before{
+						right: 1rem;
+					    position: absolute;
+					    top: 45%;
+					    color: #fff;
+					    font-size: 0.5rem;
+					    color: $dark-gray;
+					    transform: rotate(180deg);
+						transition: {
+							property: transform;
+							duration: 500ms;
+						}
+					}
+				}
+				.menu.submenu{
+					@include breakpoint(small down) {
+						position: relative;
+						display: inline-block;
+						width: 100%;
+					}
+					.checkboxes{
+						li{
+							display: list-item;
+							
+						}
+					}
+				}
+			} 
+		}
+	}
+}
+	
+.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after{
+	border: none;
+}

@@ -1,0 +1,154 @@
+// TODO - JY:  This file needs a little TLC (BEM Please and fewer overrides)
+
+$plugin-name: 'sticky-nav';
+$gutter-size: rem-calc(6);
+
+.#{$plugin-name} {
+	&.sticky {
+		width: 100%;
+
+		&.is-anchored {
+			position: relative;
+		}
+	}
+	background: $light-gray;
+	border-top: 1px solid $stroke-color;
+	border-bottom: 1px solid $stroke-color;
+
+	@include breakpoint(medium down){
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.#{$plugin-name}-wrap {
+		width: 100%;
+		// display: inline-block;
+		height: rem-calc(70);
+		margin: 0 auto;
+
+		@include breakpoint(medium down) {
+			border-bottom: 0;
+			height: auto;
+			margin: {
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+
+	.nav-items-container{
+		float: left;
+		max-width: 100%;
+		max-height: rem-calc(65);
+		overflow: hidden;
+
+		.nav-items{
+			white-space: nowrap;
+			padding: 1.4rem 0;
+			overflow: {
+				x: auto;
+				y: hidden;
+			}
+			
+		}
+
+		.horizontal-link-list li{
+			
+			&:after{
+				content: "";
+				width: 0;
+				height: 0;
+				margin: 0;
+			}
+			a{
+				color: $primary-link;
+				text-transform: uppercase;
+				font-weight: $font-heavy;
+				padding: 0.5rem;
+				margin: 0 0.75rem;
+				border: $border-med solid transparent;
+
+				&:hover, &:active, &.active{
+					color: $dark-gray;
+				}
+				&:active, &.active{
+					border: $border-med solid $dark-gray;
+					border-radius: $global-radius;
+
+				}
+				&:first-child{
+					//margin-left: 0;
+				}
+			}
+		}
+	}
+	.accordion-container{
+		float: left;
+		position: relative;
+		background: $white;
+		border-left: 1px solid $stroke-color;
+		border-right: 1px solid $stroke-color;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+
+		@include breakpoint(medium down) {
+			display: inline-block;
+			width: calc(100% + 30px);
+			margin-left: -15px;
+		}
+		.accordion-header{
+			padding: 1.25rem 0;
+			font-size: rem-calc(20);
+			text-transform: uppercase;
+			// border-bottom: 1px solid $stroke-color;
+			min-height: rem-calc(70);
+			// &[data-toggle] {
+				cursor: pointer;
+			// }
+			[class^="icon-"]{
+				position: absolute;
+				right: 1rem;
+			}
+		}
+		.accordion-wrapper{
+			top: rem-calc(70);
+			position: absolute;
+			width: 100%;
+			text-align: left;
+			border: 1px solid $stroke-color;
+			
+			.accordion{
+				border: none;
+				margin-bottom: 0;
+			}
+
+			.accordion-title{
+				font-size: rem-calc(12.69);
+
+				&:focus {
+					background: transparent;
+				}
+			}
+	
+			@include breakpoint(large up) {
+				display: block;
+
+				&.toggled {
+					display: none;
+
+				}
+			}
+
+			@include breakpoint(medium down) {
+				display: none;
+
+				&.toggled {
+					display: block;
+
+				}
+			}
+		}
+	}
+}
+

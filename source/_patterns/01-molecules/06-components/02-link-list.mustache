@@ -1,0 +1,10 @@
+<section class="link-list">
+  {{# linkList}}
+  {{# heading }}<h4>{{/ heading }}{{# headingUrl}}<a href="{{{headingUrl}}}">{{/ headingUrl}}{{heading}}{{# headingUrl}}</a>{{/ headingUrl}}{{# heading }}</h4>{{/ heading }}
+  <ul>
+  {{# linkItems}}
+    <li>{{# url}}<a href="{{{url}}}">{{/ url}}{{title}}{{# url}}</a>{{/ url}}</li>
+  {{/ linkItems}}
+  </ul>
+  {{/ linkList}}
+</section>

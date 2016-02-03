@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+
+/* Flexible Media */
+img, video, object {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	margin-bottom: $space;
+}
+
+figure {
+	margin: 0;
+	img {
+		margin-bottom: rem-calc(10);
+	}
+}
+figcaption {
+	font-style: normal;
+	font-family: $font;
+	font-weight: $font-light;
+	font-size: 0.875rem;
+}
+article {
+	display: block;
+	overflow: auto;
+}
+
+/***** LOGO *****/
+
+.icon-armstrong-logo,
+.icon-armstrong-tagline {
+	font-size: 2.75rem;
+}
+
+.logo a {
+	color: $dark-gray;
+	&:hover, &:focus {
+		color: $primary-link;
+	}
+}
+
+@media all and (min-width: $bp-med) {
+	.icon-armstrong-logo {
+		font-size: 3rem;
+	}
+}
+
+@media all and (min-width: $bp-large) {
+
+	.icon-armstrong-tagline {
+		font-size: 0.95rem;
+		padding-left: 1rem;
+		position: relative;
+		bottom: 0.5rem;
+	}
+}
+
+@media all and (min-width: $bp-xl) {
+	.icon-armstrong-logo {
+		font-size: 3.25rem;
+	}
+	.icon-armstrong-tagline {
+		font-size: 1rem;
+	}
+}

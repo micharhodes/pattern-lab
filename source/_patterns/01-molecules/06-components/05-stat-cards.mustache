@@ -1,0 +1,19 @@
+<div class="stat-cards row small-up-2 medium-up-2 large-up-4" data-equalizer="stat-cards">
+	{{# statCards}}
+		{{# statCard}}
+			<div class="stat-column column">
+				<div class="stat-card" data-equalizer-watch="stat-cards">
+					<div>
+						{{# image }}
+							<img src="{{image}}" alt="{{alt}}" />
+						{{/ image}}
+						{{^ image }}
+							{{# icon }}<span class="icon-{{icon}} {{color}}"></span>{{/ icon}} {{# statValue}} <span class="statValue">{{statValue}}</span> {{/ statValue}}<br />
+							{{# statLabel}} <span class="statLabel">{{{statLabel}}}</span> {{/ statLabel}}
+						{{/ image}}
+					</div>
+				</div>
+			</div>
+		{{/ statCard}}
+	{{/ statCards}}
+</div>

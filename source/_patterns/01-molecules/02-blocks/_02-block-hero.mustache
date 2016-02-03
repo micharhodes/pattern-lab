@@ -1,0 +1,8 @@
+<div class="tryptic-hero__panel {{ #overlay }} tryptic-hero__panel__overlay {{ /overlay }}" style="background-image: url('{{ img.src }}')">
+	{{ #overlay }}
+	<h2>{{ headline }}{{ ^headline }}Headline{{ /headline }}</h2>
+	<p>{{ trypticHero.panel1.details }}</p>
+	<button href="{{ cta.url }}" class="secondary-btn reversed">{{ cta.title }}</button>							
+	<a href="{{ trypticHero.panel1.cta.url }}" class="mask"><!-- placeholder to mask container --></a>
+	{{ /overlay }}
+</div>

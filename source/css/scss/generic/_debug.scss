@@ -1,0 +1,4 @@
+// Change chrome visiblity (h) toggle from hidden to none.
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
+  display: none;
+}

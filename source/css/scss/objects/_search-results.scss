@@ -1,0 +1,9 @@
+$plugin-name: 'search-results';
+
+
+.#{$plugin-name} {
+	header.page-title{
+		border-bottom: none;
+		padding-bottom: 0;
+	}	
+}

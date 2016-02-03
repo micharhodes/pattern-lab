@@ -1,0 +1,14 @@
+{{# mega-menu-item }}
+<!-- Equalizer doesn't support hidden elements: Re-enable if a way to support is determined -->
+<!--<div class="grid-list-item" data-equalizer-watch>-->
+<div class="grid-list-item" data-equalizer-watch>
+	<figure class="mega-menu-item" data-image-width="{{ width }}" data-image-height="{{ height }}" data-image-crop="true">
+		<a href="{{{ targetURL }}}">
+			<img data-interchange="[{{{ imageURL }}}?wid=270&hei=270&fit=crop, small], [{{{ imageURL }}}?wid=304&hei=304&fit=crop, medium], [{{{ imageURL }}}?wid=280&hei=280&fit=crop, large] ">
+		</a>
+		<figcaption>
+			<a href="{{{ targetURL }}}">{{ title }}</a>
+		</figcaption>
+	</figure>
+</div>
+{{/ mega-menu-item }}
