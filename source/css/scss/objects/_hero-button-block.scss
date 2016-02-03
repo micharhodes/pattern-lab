@@ -1,0 +1,11 @@
+.hero-button-block {
+    display: inline-block;
+    margin-top: rem-calc(10px);
+}
+
+@media all and (min-width: $bp-med) {
+    .hero-button-block {
+        margin-top: rem-calc(20px);
+        max-width: 802px;
+    }
+}
