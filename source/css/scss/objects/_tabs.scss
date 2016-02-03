@@ -1,0 +1,94 @@
+.sticky-tabs{
+	//width: 100%;
+	background: $light-gray;
+	height: rem-calc(62);
+	&.sticky{
+		width: 100%;
+	}
+}
+
+.tabs {
+	overflow: hidden;
+	border: none;
+	background: $light-gray;
+
+	ul {
+		display: table;
+		width: 100%;
+	}
+	
+	li.tabs-title {
+		display: table-cell;
+		text-align: center;
+		border-right: 1px solid transparent;
+		border-left: 1px solid transparent;
+		border-top: 1px solid transparent;
+		position: relative;
+		&::after{
+			content: '';
+			border-right: 1px solid $stroke-color;
+			position: absolute;
+			height: 50%;
+			top: 25%;
+			right: -2px;
+		}
+		
+		&.is-active {
+			border-top: 1px solid $stroke-color;
+			border-right: 1px solid $stroke-color;
+			border-left: 1px solid $stroke-color;
+			a{
+				background: $white;
+				color: $tertiary-link-hover;
+			}
+			&::after{
+				content: '';
+				border: none;
+			}
+		}
+		&:last-child{
+			&::after{
+				content: '';
+				border: none;
+			}
+		}
+
+		a {
+			display: block;
+			padding: $pad;
+			background: $light-gray; 
+			font-weight: $font-bold;
+			text-transform: uppercase;
+			color: $primary-link;
+		}
+	}
+	
+
+	
+	
+}
+
+.accordion-tabs {
+	@include breakpoint(medium) {
+		ul.accordion li.accordion-item {
+			&:not(.is-active) {
+				display: none;
+			}
+			
+			.accordion-content {
+				transition: initial;
+				max-height: initial;
+			}
+		}
+	}
+}
+.tabs-content{
+	border: none;
+	
+	float: left;
+	width: 100%;
+	.tabs-panel{
+		padding-top: rem-calc(70);
+		@include grid-column-row;
+	}
+}

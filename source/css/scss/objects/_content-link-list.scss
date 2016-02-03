@@ -1,0 +1,79 @@
+$plugin-name: 'content-link-list';
+
+
+.#{$plugin-name} {
+	margin: 1.5rem 0 0;
+	list-style: none;
+
+	li{
+		margin-top: 0;
+		&.thumb-list{
+			border: 1px solid $stroke-color;
+			background: $white;
+			padding-right: $space;
+			margin-top: 1rem;
+			&:first-child {
+				margin-top: 0;
+			}
+			h5, p {
+				margin-left: calc(33% + 1rem);
+			}
+			h5 {
+				margin-top: 1rem;
+
+			}
+			p {
+				margin-bottom: 1rem;
+			}
+			.content-link-thumb {
+				float: left;
+				margin-right: $space;
+				max-width: 33%;
+				overflow: hidden;
+			}
+			@include breakpoint(medium) {
+				h5, p {
+					margin-left: calc(120px + 1rem);
+				}
+				.content-link-thumb {
+					max-width: 120px;
+				}
+			}
+		}
+	}
+	&.search-results {
+		li {
+			border-bottom: 1px solid $stroke-color;
+			margin-top: 1rem;
+			&:first-child {
+				margin-top: 0;
+			}
+			@include breakpoint(medium) {
+				margin-top: 1.5rem;
+			}
+		}
+	}
+}
+
+article.content-link {
+	h3, h5 {
+		font-family: $font-secondary;
+		font-weight: $font-medium;
+		text-transform: none;
+		line-height: 1.35;
+	}
+	h3 {
+		font-size: rem-calc(16);
+		margin-bottom: 0.25rem;
+	}
+
+
+	@include breakpoint(medium) {
+		h3 {
+			font-size: rem-calc(18);
+		}
+		p {
+			font-size: rem-calc(14);
+		}
+	}
+}

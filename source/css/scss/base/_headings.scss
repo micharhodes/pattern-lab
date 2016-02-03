@@ -1,0 +1,93 @@
+/* Headings */
+/* Base styles */
+h1, h2, h3, h5, h6 {
+	text-transform: uppercase;
+	line-height: 0.8;
+	font-family: $font-header;
+	font-weight: $font-heavy;
+    text-align: center;
+    a{
+    	color: $black;
+    }
+}
+
+h1   {
+	font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+h2   { 
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	line-height: 2.25rem;
+	&.subheading {
+		font-size: 1.125rem;
+	}
+}
+
+h3  { 
+	font-size: 1.625rem;
+	margin-bottom: 1.5rem;
+	&.subheading {
+		font-size: 1.125rem;
+	}
+}
+
+h4   {
+	font-size: rem-calc(16px);
+    line-height: rem-calc(19px);
+	margin-bottom: 0.75rem;
+    font-weight: $font-bold;
+    a{
+    	color: $black;
+    }
+}
+
+h5 {
+	font-size: 1rem; 
+}
+
+h6	{ 
+	font-size: 0.875rem;
+}
+
+/* Subheadings */
+.subheading {
+	font-family: $font-header;
+	font-weight: normal;
+	text-transform: none;
+}
+
+
+
+/************ Medium Breakpoint **************/
+
+@include breakpoint(medium) {
+
+	h1   {
+		font-size: rem-calc(80px);
+        line-height: rem-calc(80px);
+	}
+
+	h2   { 
+		font-size: 2.5rem;
+		&.subheading {
+			font-size: 1.5rem;
+		}
+	}
+
+	h3  { 
+		font-size: 1.875rem;
+		&.subheading {
+			font-size: 1.25rem;
+		}
+	}
+    
+    h4 {
+        font-size: rem-calc(20px);
+        line-height: rem-calc(23px);
+    }
+
+}
+
+

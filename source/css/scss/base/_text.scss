@@ -1,0 +1,133 @@
+/* Text-Related Elements */ 
+p {
+    font-family: $font;
+    font-size: $font-size-slightly-smaller;
+    line-height: 1.45;
+	margin-bottom: $space;
+    &.small {
+        font-size: 0.875rem;
+    }
+}
+.no-margin{
+    margin: 0;
+}
+.caption {
+    font-size: $font-size-sm;
+    line-height: 1;
+}
+
+.intro {
+    font-size: 1.125rem;
+    line-height: 1.45;
+}
+
+small {
+    font-size: $font-size-sm;
+    line-height: 1;
+}
+
+/* Blockquote */
+blockquote, .pullquote {
+    border-left: none;
+    padding: 0.5625em 1em 0;
+    p {
+        font-family: $font;
+        color: $default-text-color;
+        font-weight: $font-light;
+        margin-bottom: $space;
+        font-size: 1.125rem;
+        line-height: 1.45;
+    }
+}
+
+strong, b {
+    font-weight: $font-bold;
+}
+
+ins {
+    text-decoration: none;
+    &:before {
+        content: '\2192';
+    }
+}
+
+q {
+    font-style: italic;
+}
+
+mark {
+    background: $highlight;
+    color: $default-text-color;
+}
+
+abbr {
+    border-bottom: 1px dotted $gray-text;
+    cursor: help;
+}
+
+aside,
+aside * {
+    font-size: $font-size-slightly-smaller;
+}
+
+code, .keystroke, kbd {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: $font-normal;
+    color: $default-text-color;
+    background: $light-gray;
+    padding: 0.35rem 0.35rem 0.2rem;
+}
+
+/* Horizontal Rule */ 
+hr {
+	border: 0;
+    height: 1px;
+    background: $stroke-color;
+    margin: $space-and-half 0;
+}
+
+.tag {
+    @extend .heavy-caps;
+    font-size: rem-calc(13);
+    color: $white;
+    background: $dark-gray;
+    padding: rem-calc(3) rem-calc(5);
+    line-height:1;
+    position:absolute;
+    top: 5%;
+    left: 0;
+    @include breakpoint(medium) {
+        font-size: rem-calc(14);
+        padding: rem-calc(5) rem-calc(8);
+    }
+}
+
+/************ Medium Breakpoint **************/
+
+@media all and (min-width: $bp-med) {
+
+    p {
+        font-size: $font-size-norm;
+        margin-bottom: $space-and-half;
+    }
+
+    .caption {
+        font-size: $font-size-slightly-smaller;
+        line-height: 1.15;
+    }
+
+    .intro {
+        font-size: $font-size-slightly-larger;
+        line-height: 1.5;
+    }
+    /* Blockquote */
+    blockquote, .pullquote {
+        padding: 0.5625em 3em 0;
+        p {
+            font-size: $font-size-large;
+            line-height: 1.5;
+        }
+    }
+
+}

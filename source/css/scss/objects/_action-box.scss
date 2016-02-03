@@ -1,0 +1,35 @@
+.action-box {
+    border: 3px solid $stroke-color;
+    padding: $pad-double;
+    display: inline-block;
+    width: 100%;
+
+    .red-border-right{
+        display: block;
+        text-align: center;
+    }
+    .center{
+        text-align: center;
+    }
+    button{
+        display: block;
+        margin: $pad auto;
+
+    }
+    
+    @include breakpoint(medium){
+        .red-border-right{
+            border-right: 2px solid $primary-accent;
+            display: inline;
+            text-align: left;
+            padding: $pad-half 0 0 0;
+        }
+        button{
+            margin:$pad-half $pad 0 0;
+            display: inline;
+
+        }
+    }
+}
+
+

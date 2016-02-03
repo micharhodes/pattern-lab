@@ -1,0 +1,101 @@
+
+.browse-result-item {
+	padding-top: 0.75rem;
+	border-bottom: 1px solid $stroke-color;
+	.compare-checkbox {
+    	label {
+    		font-size: 0.875rem;
+    		float: right;
+    		span {
+    			float: right;
+    			margin-left: 0.5rem;
+    			margin-right: 0;
+    		}
+    	}
+	}
+	.item-count {
+		@extend .heavy-caps;
+	}
+	.more-colors {
+		font-size: rem-calc(12);
+	}
+	h3 {
+		text-transform: none;
+		font-family: $font-secondary;
+		font-size: 1rem;
+    	line-height: 1.2;
+    	margin-bottom: 0.5rem;
+	}
+	p {
+		display: none;
+	}
+	table.summary {
+		margin: 0 0 0.75rem;
+		tr {
+			display: none;
+			&:first-of-type, &:nth-of-type(2), &:nth-of-type(3) {
+				display: block;
+			}
+		}
+	}
+	@include breakpoint(medium) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		.compare-checkbox {
+			label {
+				font-size: 1rem;
+				float: none;
+				padding-bottom: 1rem;
+				span {
+					float: none;
+					margin-left: 0;
+					margin-right: 0.5rem;
+				}
+			}
+		}
+		.more-colors {
+			font-size: rem-calc(14);
+			margin-top: 0.75rem;
+		}
+		h3 {
+			font-size: rem-calc(20);
+		}
+		p {
+			display: block;
+			font-size: 0.875rem;
+    		margin-bottom: 0.75rem;
+		}
+		table.summary {
+			tr {
+				display: table-row;
+				&:first-of-type, &:nth-of-type(2), &:nth-of-type(3) {
+					display: table-row;
+				}
+			}
+		}
+		a.btn {
+			margin-bottom: 0.5rem;
+		}
+	}
+	@include breakpoint(large) {
+		padding-top: 1rem;
+		padding-bottom: 2.5rem;
+		h3 {
+			font-size: 1.5rem;
+			margin-bottom: 0.75rem;
+		}
+		p {
+			font-size: 1rem;
+			margin-bottom: 1.25rem;
+			&.more-colors {
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+		}
+		.compare-checkbox {
+			label {
+				padding-bottom: 1rem;
+			}
+		}
+	}
+}

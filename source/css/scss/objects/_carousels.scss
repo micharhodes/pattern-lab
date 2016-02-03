@@ -1,0 +1,174 @@
+$plugin-name: 'carousel';
+$gutter-size: 14; //rem-calc(6);
+$item-max-width: 186;
+
+.#{$plugin-name}, .#{$plugin-name}-multi-rows {
+
+	max-width: 100%;
+	// max-width: calc(100% - 80px);
+	margin: 0 auto;
+	position: relative;
+
+	.carousel-wrap {
+		position: relative;
+		max-width: rem-calc(($item-max-width * 6) - 32);
+		margin: 0 auto $space;
+
+		// &:after {
+		// 	display: block;
+		// 	content: '';
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	background: red;
+		// 	top: 0;
+		// 	left: 0;
+		// 	opacity: 0;
+		// }
+	}
+
+	.carousel-row {
+		margin-bottom: -1px;
+	}
+
+	.button-group {
+		position: absolute;
+		top: 50%;
+  		transform: translateY(-50%);
+		height: rem-calc(25);
+		width: calc(100% + #{rem-calc(60)});
+		left: rem-calc(-30);
+
+		.button {
+			border-radius: 50%;
+			font-size: rem-calc(25);
+
+			&:focus, &:active, &:hover {
+				background: 0;
+			}
+
+			&.left {
+				padding: 0 $pad $pad 0;
+				float: left;
+			}
+
+			&.right {
+				padding: 0 0 $pad $pad;
+				float: right;
+			}
+		}
+	}
+
+	.block-carousel-item {
+		display: table-cell;
+		// &:nth-child(5) {
+		// 	display:table-cell;
+		// }
+	}
+
+	h4 {
+		text-align: center;
+		margin-bottom: rem-calc(16);
+	}
+
+	.more {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		text-decoration: underline;
+	}
+
+	button{
+		width: 25px;
+		height: 25px;
+		// position: relative;
+		&[disabled] {
+			opacity: 1;
+			background: transparent;
+		}
+	}
+
+	.previous, .next {
+		&:after {
+			display: none;
+		}
+
+		svg .arrow {
+			fill: $primary-accent;
+		}
+
+		&[disabled] {
+			svg .arrow{
+				fill: $disabled;
+			}
+		}
+	}
+}
+
+.block-#{$plugin-name}-item {
+	max-width: rem-calc($item-max-width);
+	min-width: rem-calc(120);
+	height: rem-calc(248);
+	padding: 15px;
+	width: inherit;
+	border: {
+		width: 1px;
+		style: solid;
+		color: $stroke-color;
+	}
+	margin: 0;
+	background-color: $white;
+	margin-right: -1px;
+
+	&:first-child {
+		border-left: 0;
+		max-width: rem-calc(170);
+		padding-left: 0;
+	}
+
+	&:last-child {
+		border-right: 0;
+		max-width: rem-calc(170);
+		padding-right: 0;
+	}
+
+	.#{$plugin-name}-thumbnail {
+		display: table;
+		width: 100%;
+		height: 100%;
+
+		.carousel-thumbnail-row {
+			display: table-row;
+			
+			.b-thumb {
+				display: block;
+				height: rem-calc(165);
+				// width: 100%;
+				overflow: hidden;
+
+				img {
+					display: block;
+					width: 100%;
+					min-width: rem-calc(158);
+					// min-width: rem-calc(120);
+					height: auto;
+				}
+			}
+			
+			.b-text {
+				display: table-cell;
+				min-height: rem-calc(67);
+				vertical-align: middle;
+				text-align: center;
+				text-transform: uppercase;
+
+				font: {
+					size: rem-calc(16);
+					weight: $font-bold;
+				}
+			}
+		}
+	}
+
+}

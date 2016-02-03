@@ -1,0 +1,51 @@
+.hero {
+    background-position: center;
+    background-size: cover;
+    padding: rem-calc(18px) rem-calc(15px);
+    text-align: center;
+    
+    header {
+        h1 {
+            color: $white;
+            margin-top: rem-calc(10px);
+        }
+        
+        .subheading {
+            color: $white;
+            font-size: rem-calc(16px);
+            line-height: rem-calc(19px);
+            
+            &:after {
+				background: $primary-accent;
+				content: '';
+				display: block;
+				height: 2px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 15px;
+				width: 52px;
+			}
+        }
+    }
+}
+
+@media all and (min-width: $bp-med) {
+    .hero {
+        padding-bottom: rem-calc(35px);
+        padding-top: rem-calc(30px);
+
+        header {
+            h1 {
+                margin-top: rem-calc(15px);
+            }
+
+            .subheading {
+                font-size: rem-calc(20px);
+                
+                &:after {
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+$overlay-color: $primary-accent;
+$overlay-opacity: 0.75;
+$overlay-blend-mode: soft-light;
+/* screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity */
+$plugin-name: 'tryptic-hero';
+$gutter-size: 14; //rem-calc(6);
+
+.#{$plugin-name} {
+	@include grid-row(null, 'collapse', rem-calc(100)rem);
+	margin: 0;
+
+	background: {
+			color: $white;
+			repeat: no-repeat;
+			position: center;
+			size: cover;
+		}
+	
+	> div {
+
+		&:first-of-type:not(:last-of-type):not(.single) {
+			@include grid-column(3, 0);
+			@include hide-for-only(small);
+		}
+
+		&:nth-of-type(2) {
+			@include grid-column(12, 0);
+
+			@include breakpoint(medium) {
+				@include grid-column(4, $gutter-size);
+
+				&:last-of-type {
+					// this is an edge case
+					@include grid-column(9, 0); 
+				}
+			}
+		}
+
+		&:nth-of-type(3) {
+			@include grid-column(5, 0);
+			@include hide-for-only(small);
+		}
+
+		&:only-of-type {
+			@include grid-column(12, 0);
+			@include breakpoint(medium) {
+				&:not(.single) {
+
+					@include grid-column(4, 0);
+					@include grid-col-pos(3)
+				}
+			}
+			&.single {
+				// @include hide-for-only(small);
+			}
+		}
+	}
+}
+
+.#{$plugin-name}__panel {
+	position: relative;
+	min-height: 410px;
+	height: 100%;
+	background: {
+		color: transparent;
+		repeat: no-repeat;
+		position: center;
+		size: cover;
+	}
+	padding: rem-calc(25);
+	color: $white;
+	
+	h2 {
+		color: $white;
+	}
+	
+	a.secondary-btn {
+		// border-color: $white;
+		@include secondary-btn-colors($white, $white);
+		
+	}
+	
+	&:hover {
+		a:not(.mask), button {
+			background: rgba($white, 0.25);
+			color: $white;
+			text-shadow: 1px 1px 2px rgba($primary-accent, 0.5);
+			border: $border-med solid $white;
+		}
+	}
+	
+	&__overlay {
+		background-color: rgba(red($overlay-color), green($overlay-color), blue($overlay-color), $overlay-opacity);
+		background-blend-mode: $overlay-blend-mode;
+	}
+
+	a {	
+		&.secondary-btn {
+			background-color: transparent;
+			font-weight: bold;
+			text-transform: uppercase;
+			border: {
+				width: 3px;
+				style: solid;
+				radius: 5px;
+			}
+		}
+		&.mask {
+			/*see scss>base>links*/
+		}
+	}
+
+}

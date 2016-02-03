@@ -1,0 +1,208 @@
+.video {
+    [data-comp="video"] {
+        position: absolute;
+    }
+
+    [class*="vjs-"] {
+        + .play-pause-button {
+            display: none;
+        }
+
+        &:hover {
+            ~ .vjs-control-bar {
+                .vjs-play-control.vjs-playing {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .vjs-control-bar {
+        > * {
+            display: none;
+        }
+
+        > .vjs-play-control {
+            display: block;
+
+            &:before {
+                bottom: 0;
+                content: url('/etc/designs/gp/img/play-button.svg');
+                height: 42%;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: -7.957221975%;
+                top: 0;
+                vertical-align: middle;
+                width: 42%;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.vjs-playing {
+                display: none;
+
+                &:before {
+                    content: url('/etc/designs/gp/img/pause-button.svg');
+                    right: 0;
+                }
+
+                &:hover {
+                    display: block;
+                }
+            }
+
+            .vjs-control-content {
+                display: none;
+            }
+        }
+    }
+
+    .vjs-caption-settings {
+        display: none;
+    }
+
+    .aspect-control {
+        height: 0;
+        position: relative;
+        width: 100%;
+
+        &.four-three {
+            padding-bottom: 75%;
+
+            .play-pause-button, .vjs-play-control {
+                width: 16%;
+            }
+        }
+
+        &.sixteen-nine {
+            padding-bottom: 56.25%;
+
+            .play-pause-button, .vjs-play-control {
+                width: 12.13%;
+            }		
+        }
+
+        &.sixteen-ten {
+            padding-bottom: 62.5%;
+
+            .play-pause-button, .vjs-play-control {
+                width: 13%;
+            }
+        }
+        
+        &.extra-wide {
+            padding-bottom: 50.737%;
+            
+            .play-pause-button, .vjs-play-control {
+                width: 11%;
+            }
+        }
+
+        video {
+            height: 100%;
+            left: 0;
+            object-fit: fill;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+
+                + .play-pause-button {
+                    &.clicked {
+                        display: block;
+                    }
+                }
+            }
+
+            &:-webkit-full-screen {
+                object-fit: contain;
+            }
+
+            &:-moz-full-screen {
+                object-fit: contain;
+            }
+        }
+
+        .vjs-poster {
+            margin-top: 0;
+        }
+
+        .vjs-has-started {
+            .vjs-poster {
+                display: none;
+            }
+        }
+        .click-zone {
+            bottom: 35px;
+            left: 0;
+            margin-top: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .play-pause-button, .vjs-play-control {
+            border-radius: 50%;
+            bottom: 0;
+            color: $white;
+            height: 21.94%;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            z-index: 15;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.clicked {
+                display: none;
+
+                &:hover {
+                    display: block;
+                }
+                
+                .icon-play {
+                    display: none;
+                }
+            }
+
+            .play-button {
+                background: url(../../images/play.svg);
+                background-position: 0;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                bottom: 0;
+                height: 100%;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+                vertical-align: middle;
+                width: auto;
+            }
+        }
+    }
+}
+
+.ext-ie8 {
+    .video {
+        .aspect-control {
+            .play-pause-button, .vjs-play-control {
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgmAkAAJwAmsoF3fMAAAAASUVORK5CYII=);
+            }
+        }
+    }
+}

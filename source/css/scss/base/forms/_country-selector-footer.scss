@@ -1,0 +1,43 @@
+$widget: 'country-selector-footer';
+
+.#{$widget} {
+	h4 {
+		font-size: rem-calc(14);
+		margin-bottom: rem-calc(14);
+	}
+	label {
+		font-family: $font-secondary;
+		font-weight: normal;
+		font-size: rem-calc(14);
+		color: $gray-text;
+		line-height: 1.3;
+		text-transform: inherit;
+		margin-bottom: 11px;
+	}
+	.field-container {
+		margin-bottom: 0;
+
+		@include breakpoint(small down) {
+			margin-bottom: 1rem;
+		}
+	}
+	.select-dropdown:before {
+		@include iconBase;
+
+		content: "#{map-get($iconMap, 'globe')}";
+		width: 35px;
+		height: 40px;
+		color: $stroke-color;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		font-size: rem-calc(20);
+		line-height: rem-calc(40);
+		pointer-events: none;
+
+	}
+
+	.select-dropdown select {
+		padding-left: 2rem;
+	}
+}

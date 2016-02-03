@@ -1,0 +1,70 @@
+ol, ul {
+	margin: 0;
+	padding: 0;
+	font-family: $font;
+	font-size: $font-size-slightly-smaller;
+    line-height: 1.45;
+    list-style: disc;
+	margin: 0 0 $space 1.2rem;
+	li {
+		margin-top: $space;
+		&:first-child {
+			// margin-top: 0;
+		}
+		a{
+			color: $black;
+		}
+	}
+	ul, ol {
+		list-style: circle;
+		margin-bottom: 0;
+		li {
+			margin-top: $space-quarter;
+			&:first-child {
+				// margin-top: $space-quarter;
+			}
+		}
+	}
+}
+
+ol {
+	list-style: decimal;
+	margin: 0 0 1rem 1.5rem;
+	ol {
+		list-style: lower-roman;
+	}
+}
+
+/* Definition Lists */
+dl {
+	overflow: hidden;
+	margin: 0 0 $space;
+	font-family: $font;
+	font-size: $font-size-slightly-smaller;
+    line-height: 1.45;
+}
+
+dt {
+	font-weight: $font-bold;
+}
+
+dd {
+	margin-left: 0;
+}
+
+dl, dd {
+	margin-bottom: $space;
+}
+.docList{
+	margin-bottom: $space;
+}
+
+/************ Medium Breakpoint **************/
+
+@media all and (min-width: $bp-med) {
+
+	ol, ul, dl {
+		font-size: $font-size-norm;
+	}
+	
+}

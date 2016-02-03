@@ -1,0 +1,47 @@
+.striped-container {
+    background: repeating-linear-gradient(
+        45deg,
+        #dadbdb,
+        #dadbdb 5px,
+        #e8e8e8 5px,
+        #e8e8e8 12px
+    );
+    padding: 20px;
+    
+    &.wide {
+        .row {
+            max-width: rem-calc(1240px);
+        }
+        
+        .column {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    }
+    
+    div.equal {
+        background: $white;
+        height: auto;
+
+        
+    }
+    
+    &:not(.wide) {
+        .column {
+            padding: 0;
+        }
+    }
+}
+
+@media all and (min-width: $bp-large) {
+    .striped-container {
+        padding: 40px 20px;
+        
+        &.wide {
+            .column {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+    }
+}

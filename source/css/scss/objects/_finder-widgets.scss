@@ -1,0 +1,75 @@
+.finder-widget {
+	// border: 1px solid $stroke-color;
+	// background: $light-gray;
+	h4 {
+		position:relative;
+		width: 90%;
+		padding: 1rem rem-calc(10);
+		margin-bottom: 0;
+		&:after {
+			@include iconBase;
+			content: '\e936';
+			position: absolute;
+			top: 0;
+			right: -10%;
+			padding: 1rem 0.625rem 0.625rem 0.8rem;
+			border-left: 1px solid $stroke-color;
+			height: 100%;
+		}
+	}
+	&.active {
+		background: $white;
+		h4:after {
+			content: '\e939';
+			border-bottom: 1px solid $stroke-color;
+		}
+	}
+	h4, p, form {
+		text-align: left;
+	}
+
+	span.legend, legend {
+		font-weight: $font-bold;
+		font-family: $font-secondary;
+		margin-right: 1.5rem;
+		text-transform: none;
+	}
+	label {
+		font-family: $font-secondary;
+		font-weight: $font-normal;
+		text-transform: none;
+	}
+	.options {
+		ul {
+			display: inline-block;
+			text-align: left;
+		}
+	}
+	.widget-content {
+		display: none;
+		padding: rem-calc(10);
+	}
+}
+
+@include breakpoint(medium up) {
+	.finder-widget {
+		padding: 1.5rem 1.5rem 0;
+		.widget-content {
+			display: block;
+		}
+		h4, p, form {
+			text-align: center;
+		}
+		h4 {
+			width: 100%;
+			padding: 0.5rem rem-calc(10);
+			&:after {
+				content: none;
+				border: none;
+				padding: 0;
+				display: none;
+			}
+		}
+	}
+}
+	

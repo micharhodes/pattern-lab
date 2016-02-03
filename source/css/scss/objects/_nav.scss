@@ -1,0 +1,142 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+	.main-nav-wrapper{
+		ul{
+			font-family: $font;
+			font-weight: $font-bold;
+			font-size: rem-calc(16);
+			margin-left: $pad-and-half;
+			text-align: center;
+			li{
+				display: block;
+				width: 100%;
+				text-align: left;
+				margin: 0;
+				a{
+					color: $white;
+					&:hover{
+						color: $primary-accent;
+					}
+				}
+				&:after{
+					content: "\2014";
+					color: $medium-gray;
+					display: block;
+					@include breakpoint(large) {
+						display: inline-block;
+						content: "|";
+					}
+				} 
+				&:last-child{
+					&:after{
+						content: "";
+
+					}
+					a{
+						margin-right: 0;
+					}
+				}
+				&:first-child{
+					a{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	
+	}
+	
+.main-nav{
+	@include breakpoint(large) {
+		position: relative;
+		height: 100%;
+		min-height: rem-calc(100);
+	    
+		.main-nav-wrapper{
+			position: absolute;
+		    top: 35%;
+		    left: 0;
+		    right: 0;
+		    ul{
+				margin: 0;
+				li{
+					display: inline-block;
+					width: auto;
+					a{
+						margin: $pad-half;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+/* UTILITY NAV */
+.utility-nav {
+	display: block;
+	ul.inline-list {
+		font-family: $font;
+		font-weight: $font-medium;
+		font-size: rem-calc(14);
+		text-transform: capitalize;
+		margin-left: $pad;
+		
+		li {
+			display: block;
+			width: 100%;
+			text-align: left;
+			a{
+				color: $white;
+				&:hover{
+					color: $primary-accent;
+				}
+			}
+		}
+	}
+	@include breakpoint(large) {
+		padding: 0;
+		ul.inline-list {
+			margin: 0;
+			display: table;
+			width: 100%;
+			margin-bottom: $space-half ;
+			li {
+				display: table-cell;
+				text-align: center;
+				padding: 0 0.25rem;
+				width: auto;
+				a {
+					font-size: rem-calc(12);
+				}
+				&:first-child{
+					text-align: left;
+				}
+				&:last-child{
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+/* END UTILITY NAV*/
+
+
+//Pagination
+/*.pagination {
+	overflow: hidden;
+
+	li {
+		float: left;
+		border-right: 1px solid $gray-light-2;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		padding: $pad;
+	}
+}*/

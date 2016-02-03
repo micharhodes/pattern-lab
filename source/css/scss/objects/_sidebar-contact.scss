@@ -1,0 +1,46 @@
+$plugin-name: 'sidebar-contact';
+
+.#{$plugin-name}{
+	border: 1px solid $stroke-color;
+	text-align: center;
+	h4{
+		padding: $space $space 0;
+		margin-bottom: 0;
+		line-height: $base-line-height;
+		color: $primary-accent;
+	}
+	p.subheading{
+		font-size: rem-calc(14);
+		padding: $space-half $space-double 0;
+		margin-bottom: $space-half;
+		color: $gray-text;
+		font-family: $font-secondary;
+	}
+	.contact-container{
+		background: $light-gray;
+		padding: $space;
+		border-top: 1px solid $stroke-color;
+		button{
+			margin-bottom: $space-half;
+			padding: $space-half 0.875rem 0.45rem;
+			span[class^="icon"]{
+				font-size: 1.25rem;
+			}
+			span.button-text{
+				margin-top: 0.25rem;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		.contact-phone{
+			color: $gray-text;
+			a{
+				color: $gray-text;
+				font-family: $font-secondary;
+			}
+		}
+		span[class^="icon"]{
+			margin: 0 $space-half 0 0;
+		}
+	}
+}

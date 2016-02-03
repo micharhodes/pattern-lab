@@ -1,0 +1,191 @@
+ul.accordion {
+	margin-bottom: $space;
+	border: 0; 
+	li.accordion-item {
+		margin-top: 0;
+		background: $white;
+		color: $dark-gray;
+		border-bottom: 1px solid $stroke-color;
+		position: relative;
+
+		&.is-active, &.active{
+			background: $white;
+
+			.accordion-content {
+				// transform: translate(0,0%);
+                border-top: 1px solid $stroke-color;
+				transition: max-height .3s ease 0s, padding 0s ease 0s ;
+				max-height: 999px;
+				overflow: auto;
+				padding: 1rem 1rem 1.25rem 1rem;
+			}
+		}
+		&:last-child{
+			border-bottom: 1px solid $stroke-color;
+		}
+		.accordion-content {
+            background: $light-gray;
+			transition: max-height .3s ease 0s, padding 0s ease .3s ;
+			max-height: 0;
+			display: block !important;
+			overflow: hidden;
+			padding: 0;
+			border-bottom: 0;
+			// transform: translate(0,-100%);
+			
+			.center{
+				text-align: center;
+			}
+			button{
+				display: block;
+				margin: $pad auto;
+			}
+			@include breakpoint(medium){
+				button{
+					display: inline-block;
+				}
+				button:not(:last-child){
+					margin-right: $pad;
+					//display: inline-block;
+				}
+			}
+			
+		}
+	}
+	.accordion-title{
+				$tg: rem-calc(16);  //toggle gutter
+
+		//@include makeIcon('chevron-sm-down', 'before');
+		color: $dark-gray;
+        padding-left: 40px;
+        position: relative;
+		font-family: $font;
+		font-weight: $font-bold;
+        overflow: hidden;
+		text-transform: uppercase;
+		font-size: rem-calc(20px);
+		border: none;
+		span{
+			display: inline-block;
+			vertical-align: middle;
+			&[class^="icon"]{
+                bottom: 5px;
+				font-size: $font-size-large;
+				color: $primary-accent;
+                height: 25px;
+                margin: auto;
+				margin-right: $pad;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 25px;
+			}
+            &.accordion-main-title {
+                width: 100%;
+            }
+			&.accordion-subtitle{
+				font-family: $font-header;
+				font-weight: $font-normal;
+				color: $primary-accent;
+                margin-top: 10px;
+                text-align: left;
+                width: 100%;
+				.small{
+					font-size: $font-size-sm;
+					display: block;
+					color: $gray-text;
+					margin-top: $pad-quarter;
+				}
+			}
+		}
+
+
+		&:before {
+			content: '';
+		}
+		&:hover, &:focus {
+			background: $white;
+			&:before {
+			//	transform: rotate(90deg);
+			}
+		}
+
+	}
+	.is-active .accordion-title, .active .accordian-title {
+		border-bottom: none;
+        
+        span {
+            &[class^="icon"].expander {
+                &:before {
+                    content: '\e902';
+                }
+            }
+            
+        }
+	
+
+	}
+}
+ul.accordion.forms{
+	.accordion-title{
+		span{
+			&.accordion-main-title{
+				width: 90%;
+				margin-bottom: $pad-quarter;
+
+			}
+			&.accordion-subtitle{
+				width: 100%;
+				text-align: left;
+				font-family: $font;
+				font-size: rem-calc(16);
+				color: $dark-gray;
+			}
+			&[class^="icon"].right{
+				right: 0;
+				color: $black;
+			}
+		}
+		
+
+	}
+}
+
+@media all and (min-width: $bp-large) {
+    ul.accordion {
+        li.accordion-item {
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        
+        .accordion-title {
+            span {
+                &.accordion-main-title {
+                }
+                
+                &.accordion-subtitle {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $bp-med) {
+    ul.accordion {
+        .accordion-title {
+            span {
+                &.accordion-main-title {
+                    width: 65%;
+                }
+                &.accordion-subtitle {
+                    margin-top: 0;
+                    text-align: right;
+				    float: right;
+                    width: 25.5%;
+                }
+            }
+        }
+    }
+}

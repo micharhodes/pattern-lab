@@ -1,0 +1,55 @@
+{
+	"accordion":{
+		"allow-all-closed": true,
+		"ul-class": "forms",
+		"accordion-item": [
+			{
+				"accordionItemId": "first",
+				"accordion-title": "Authorized representative designation form",
+				"icon-other": "pdf",
+				"accordion-subtitle": "Use this for lorem ipsum dolor sit amet lorem.",
+				"accordion-content": "<div class='row column medium-collapse'><button>Download form <span class='regular'>(100kb)</span></button><p class='bold'>Mail the completed Designation to:</p><div class='column medium-6 small-12'>NFL Players Benefits<br />200 Saint Paul St STE<br />Baltimore, MD 21202</div><div class='column small-12 medium-6'>If you have any questions,<br />please call the Plan Office at<br /><span class='bold'>800-638-3186</span></div></div>",
+				"icon": "expand"
+			},
+			{
+				"accordionItemId": "second",
+				"accordion-title": "Tax withholding election form",
+				"icon-other": "pdf",
+				"accordion-subtitle": "Use this for lorem ipsum dolor sit amet lorem.",
+				"accordion-content": "<p>The savings plan is a type of retirement account that helps support you financially later in life. Through the NFL Savings Plan, you put aside money during your years of play. For each contribution you make, your club contributes twice as much up to maximum value per year. When you are eligible, you choose how and when you’d like to make withdrawals.</p><button>Download Form</button>",
+				"icon": "expand"
+			},
+			{
+				"accordionItemId": "third",
+				"accordion-title": "Your rollover options",
+				"icon-other": "pdf",
+				"accordion-subtitle": "Use this for lorem ipsum dolor sit amet lorem.",
+				"accordion-content": "The NFL Players Association has a long standing history in protecting the rights and best interests of our player members. As we approach a milestone anniversary, brush up on our history with a quick video.",
+				"icon": "expand"
+			},
+			{
+				"accordionItemId": "fourth",
+				"accordion-title": "Request for ecredited seasons",
+				"icon-other": "pdf",
+				"accordion-subtitle": "Use this for lorem ipsum dolor sit amet lorem.",
+				"accordion-content": "The NFL Players Association has a long standing history in protecting the rights and best interests of our player members. As we approach a milestone anniversary, brush up on our history with a quick video.",
+				"icon": "expand"
+
+			}
+		]
+	},
+	"action-box":{
+		"action-title": "Other Retirement Actions",
+		"button-items":[
+			{
+				"button-title": "Action One"
+			},
+			{
+				"button-title": "Action Two"
+			},
+			{
+				"button-title": "Action Three"
+			}
+		]
+	}
+}

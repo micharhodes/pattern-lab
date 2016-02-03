@@ -1,0 +1,14 @@
+{{# case-study-item }}
+<div class="grid-list-item" data-equalizer-watch>
+	<figure class="case-study-item" data-image-width="{{ width }}" data-image-height="{{ height }}" data-image-crop="true">
+		<a href="{{{ targetURL }}}">
+			<img data-interchange="[{{{ imageURL }}}?wid=270&hei=270&fit=crop, small], [{{{ imageURL }}}?wid=304&hei=304&fit=crop, medium], [{{{ imageURL }}}?wid=280&hei=280&fit=crop, large] ">
+			{{> atoms-tag }}
+		</a>
+		<figcaption>
+			<a href="{{{ targetURL }}}">{{ title }}</a>
+			<span class="metadata">{{ file-type }} <span class="divider">|</span> {{ file-size }}</span>
+		</figcaption>
+	</figure>
+</div>
+{{/ case-study-item }}

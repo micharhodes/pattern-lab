@@ -1,0 +1,30 @@
+.section {
+	@extend .full-width;
+	background: $white;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	&.gray {
+		background: $light-gray;
+		border-top: 1px solid $stroke-color;
+		border-bottom: 1px solid $stroke-color;
+
+		+.solid {
+			border-top: 0;
+		}
+	}
+	&.product-sku-table {
+		.icon-plant {
+			color: $eco-green;
+		}
+		@include breakpoint(large) {
+			.key {
+				text-align: right;
+			}
+		}
+	}
+	@include breakpoint(medium) {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}

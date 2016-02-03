@@ -1,0 +1,81 @@
+.sticky-container{
+	height: 100% !important;
+	ul.accordion {
+		.accordion-content{
+			display: block;
+		}
+	}
+
+	
+
+	@include breakpoint(medium) {
+		.accordion-tabs{
+			margin-top: 5rem;
+		}
+		ul.accordion{
+			float: none;
+			border: none;
+			li.accordion-item{
+				border-bottom: none;
+			}
+			.accordion-content{
+				border-bottom: none;
+				float: none;
+			}
+		}
+		.tabs{
+			.tabs-title {
+				margin-top: 0.8rem;
+				> a{
+					font-size: rem-calc(16.1);
+				}
+			}
+
+			
+		}
+	}
+
+	@include breakpoint(small down) {
+		ul.accordion {
+			border: none;
+			li.accordion-item{
+				margin-bottom: $space-half;
+				border: none;
+				a.accordion-title{
+					font-size: rem-calc(20);
+					border: 1px solid $stroke-color;
+					&::before{
+						color: $dark-gray;
+					}
+				}
+				.accordion-content{
+					border: none;
+				}
+			}
+
+			li.accordion-item.is-active {
+				.accordion-content{
+					padding-top: 1rem;
+				}
+				a{
+					border: none;
+					border-top: 1px solid $stroke-color;
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+
+
+//.accordion-tabs {
+//	.accordion-item.is-active {
+//		.accordion-content {
+//			display: block;
+//		}
+//	}
+//}
+
+//tab styles in _tabs.scss
+//accordion styles in _accordion.scss
+

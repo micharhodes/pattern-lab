@@ -1,0 +1,285 @@
+/*------------------------------------*\
+    $Table
+\*------------------------------------*/
+table {
+	border-collapse: collapse; 
+	border-spacing: 0; 
+	border: none;
+	width: 100%;
+	display: table;
+  	margin: 0;
+  	line-height: 1.35;
+  	border-radius: 0;
+
+  	thead {
+  		border: 1px solid #353535;
+  		th {
+  			font-size: rem-calc(14);
+  			line-height: 1;
+  			background: $dark-gray;
+			color: $white;
+			text-transform: uppercase;
+			font-family: $font;
+			font-weight: $font-heavy;
+  		}
+  	}
+
+  	tbody {
+  		border: 1px solid $stroke-color;
+  		font-family: $font-secondary;
+  	}
+
+	>tr, >thead tr, >tbody tr {
+		background: $white;
+		&:nth-of-type(even) {
+			background: $light-gray;
+		}
+	}
+	th, td {
+		padding: 0.5rem;
+		text-align: left;
+		font-size: rem-calc(14);
+		ul {
+			margin: 0;
+			list-style-type: none;
+			font-size: inherit;
+			li {
+				margin: 0;
+			}
+		}
+	}
+	[class^="icon-"], [class*=" icon-"], .icon {
+		display: block;
+		font-size: 1.25rem;
+		margin: rem-calc(5) 0;
+	}
+	.icon-square-panel, .icon-rectangle-panel, .icon-plank {
+		font-size: 1.25rem;
+		margin-bottom: 0.75rem;
+	}
+
+	&.responsive {
+		display: block;
+		
+		>thead, tbody, thead tr, th, tbody td {
+			display: block;
+		}
+		
+		>thead {
+			float: left;
+			border: 1px solid $dark-gray;
+			border-right: none;
+			th {
+				max-width: 6.5rem;
+				text-align: right;
+			}
+		}
+		
+		>tbody {
+			width: auto;
+			position: relative;
+			overflow-x: auto;
+			border-top: 1px solid $stroke-color;
+			border-bottom: none;
+			border-right: none;
+			>tr {
+				display: table-cell;
+				>td, >th {
+					&:first-of-type {
+						border-top: none;
+					}
+				}
+				&:last-child {
+					td {
+						border-right:1px solid $stroke-color;
+					}
+				}
+			}
+		}
+		>tr, >thead tr, >tbody tr {
+			
+			>td, >th {
+				border-top: 1px solid $stroke-color;
+				box-sixing: border-box;
+				overflow-x: hidden;
+				overflow-y: auto;
+				min-width: rem-calc(60);
+				&:last-child {
+					border-bottom: 1px solid $stroke-color;
+				}
+			}
+			>th {
+				border-top: 1px solid #353535;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+
+		table {
+			display: table;
+			thead {
+				display: table-header-group;
+				float: none;
+			}
+			tbody {
+				display: table-row-group;
+				border: 1px solid $stroke-color;
+			}
+			thead tr, tbody tr {
+			    display: table-row;
+			}
+			  
+			th, tbody td {
+				display: table-cell;
+			}
+			  
+			td, th {
+				width: auto;
+				border-top: 1px solid $stroke-color;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+			tr {
+				&:first-of-type {
+					td, th {
+						border-top: none;
+					}
+				}
+			}
+			tr td {
+				border-right: none;
+			}
+			>tbody >tr:last-child td {
+				border-right: none;
+			}
+			>tbody >tr {
+				&:first-of-type {
+					td:first-of-type{
+						border-top: none;
+					}
+				}
+				>td {
+					&:first-of-type {
+						border-top: 1px solid $stroke-color;
+					}
+					border-right: none;
+
+				}
+			}
+			&.responsive {
+				@extend .responsive;
+				tr:last-child td {
+					border-right: 1px solid $stroke-color;
+					margin-right:1px;
+				}
+			}
+		}
+
+		>tbody > tr:last-child td {
+			>table {
+				>tbody >tr >td {
+					border-right: none;
+				}
+			}
+		}			
+		
+
+		@include breakpoint(large) {
+			table {
+				display: table;
+				&.responsive {
+					>tbody >tr td:first-of-type {
+						border-top: none;
+					}
+					>tbody tr:first-of-type >td {
+						border-top: none;
+					}
+					>tbody {
+						>tr {
+							&:last-of-type {
+								td {
+									border-right: none;
+								}
+							}
+						}
+					}
+				}
+			}
+			thead {
+				display: table-header-group;
+				float: none;
+				border: 1px solid $dark-gray;
+			}
+			tbody {
+				display: table-row-group;
+				border: 1px solid $stroke-color;
+			}
+			thead tr, tbody tr {
+			    display: table-row;
+			}
+			  
+			th, tbody td {
+				display: table-cell;
+			}
+			  
+			td, th {
+				width: auto;
+				border-top: 1px solid $stroke-color;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+			tr {
+				&:first-of-type {
+					td, th {
+						border-top: none;
+					}
+				}
+			}
+			>tbody >tr {
+				&:first-of-type {
+					td:first-of-type{
+						border-top: none;
+					}
+				}
+				>td {
+					&:first-of-type {
+						border-top: 1px solid $stroke-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media all and (min-width: $bp-large) {
+
+	table {
+	  	&.responsive {
+	  		display: table;
+	  		tbody {
+	  			border-right: 1px solid $stroke-color;
+	  		}
+	  		> thead {
+		  		th {
+					max-width: auto;
+					text-align: left;
+				}
+			}
+	  		>tbody {
+				>tr {
+					&:last-of-type {
+						td {
+							border-right: none;
+						}
+					}
+				}
+			}
+	  	}
+	}
+}
+

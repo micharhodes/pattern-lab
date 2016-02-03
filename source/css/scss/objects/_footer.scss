@@ -1,0 +1,174 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+footer{
+	background: $black;
+	color: $white;
+	font-weight: $font-medium;
+	padding: $pad-double;
+	ul{
+		list-type: none;
+		text-align: center;
+		li{
+			display:inline-block;
+			&:not(:last-child):after{
+				content: "|";
+				margin: 0 $pad;
+
+			}
+			a{
+				text-decoration: underline;
+				color: $white;
+				
+			}
+		}
+	}
+}
+
+.footer {
+	clear: both;
+	overflow: hidden;
+	line-height: 1.2;
+	padding-top: rem-calc(40px);
+	margin-top: 0;
+	border-top: 1px solid $stroke-color;
+	h4 {
+		@extend h5;
+	}
+	
+	@include breakpoint(small down) {
+		[data-multi-toggle-group] {
+			// outline: 1px solid red;
+			margin-left: rem-calc(-16px);
+			margin-right: rem-calc(-16px);
+			
+			&:not(.is-open) {
+			// outline: 1px solid green;
+				.multi-toggle__panel {
+					// display: none;
+					max-height: 0px;
+					
+				}
+				.multi-toggle__toggler {
+					display: block;
+					border-bottom-width: 1px;
+					
+					// @include makeIcon('chevron-sm-down', 'after');
+					&:after {
+						transform: rotate(0deg);
+					}
+	
+					&:hover {
+						&:after {
+							transform: rotate(90deg);
+						}
+					}
+				}
+			}
+
+			.multi-toggle__panel {
+				padding-left: rem-calc(16px);
+				padding-right: rem-calc(16px);
+				max-height: 999px;
+				overflow: hidden;
+				transition: {
+					property: max-height;
+					duration: 250ms;
+				}
+			}
+			.multi-toggle__toggler {
+				$tg: rem-calc(16);  //toggle gutter
+				margin-top: -1px;
+				padding-left: rem-calc(16px);
+				padding-right: rem-calc(16px)+ $tg;
+				border: 1px solid $stroke-color;
+				border-bottom-width: 0;
+				cursor: pointer;
+				user-select: none;
+				position: relative;
+
+				@include makeIcon('chevron-sm-down', 'after');
+
+				&:after {
+					color: $stroke-color;
+					position: absolute;
+					right: $tg;
+					top: calc(#{-($tg/2)} + 50%);
+					// top: 50%;
+					// transform: translateY(-50%);
+					transform: rotate(180deg);
+					transition: {
+						property: transform;
+						duration: 500ms;
+					}
+				}
+
+				> * {
+					display: inline-block;
+				}
+
+				h4 {
+				    margin-top: 0.875rem;
+				    margin-bottom: 0.875rem;
+				}
+			}
+		}
+	}
+
+    @include breakpoint(medium) {
+
+		.reverse-on-desktop {
+			.column, .columns {
+				float: right;
+			}
+		}
+
+		.toggler {
+			h4 {
+				margin-bottom: 0.875rem;
+			}
+		}
+	}
+
+	//Footer Nav
+	
+	.copyright {
+		color: $gray-text;
+		font: {
+			size: rem-calc(14px);
+			family: $font-secondary;
+		}
+		@media all and (max-width: $bp-med) {
+			text-align: center;
+		}
+
+		margin-bottom: 15px;
+
+	}
+	.horizontal-link-list {
+		@media all and (min-width: $bp-med) {
+			text-align:	right;
+		}
+		@media all and (max-width: $bp-med) {
+			text-align: center;
+		}
+		margin-bottom: 15px;
+	}
+
+	.social-link-list {
+		margin-top: 1.5rem;
+		@media all and (max-width: $bp-med) {
+			display: table;
+			width: 100%;
+			ul {
+				display: table-row;
+
+				li {
+					display: table-cell;
+					text-align: center;
+				}
+			}
+		}
+
+	}
+}

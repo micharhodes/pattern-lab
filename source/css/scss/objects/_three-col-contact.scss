@@ -1,0 +1,52 @@
+$plugin-name: 'contact-tiles';
+
+.#{$plugin-name} {
+	div.row {
+		padding-top: 1.5rem;
+		padding-bottom: 0.5rem;
+	}
+	
+	.contact-tile {
+		@include grid-column(12);
+		@include breakpoint(medium) {
+			@include grid-column(4);
+		}
+	}
+}
+
+
+.contact-tile {
+	text-align: center;
+	margin-top:1rem;
+	span {
+		font-size: 2.5rem;
+		color: $gray-text;
+		margin-bottom: 1rem;
+		display: block;
+	}
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+@media all and (min-width:$bp-med) {
+	.#{$plugin-name} {
+		div.row {
+			padding-top: 1.5rem;
+			padding-bottom: 0;
+		}
+	}
+	.contact-tile {
+		margin-top: 0;
+	}
+}
+
+@media all and (min-width: $bp-large) {
+	.#{$plugin-name} {
+		div.row {
+			padding-top: 2rem;
+			padding-bottom: 0.5rem;
+		}
+	}
+}
+

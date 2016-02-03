@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+
+/* Search Form */
+.search-form {
+	//opacity: .2; 
+	border-radius: 3px; 
+	background-clip: padding-box; 
+	background-color: rgba(255, 255, 255, 0.2); 
+	margin: $pad-and-half;
+	input{
+		color: $white;
+		background: transparent;
+		border: none;
+		margin: 0;
+		height: auto;
+		font-family: $font;
+		font-size: rem-calc(15);
+		&:focus, &:active{
+			color: $white;
+			background: transparent;
+			border: none;
+		}
+	}
+	
+
+	.search-submit {
+		.icon-search{
+			//background: url('../images/search.svg') no-repeat center center;
+			//padding: 0.5rem 1.5rem;
+			color: $white;
+			font-size: $font-size-slightly-larger;
+			padding-right: $space-half;
+			
+		}
+		min-width: auto;
+		border: 0;
+		background: none;
+		padding: 0;
+		margin: 0.1rem;
+		
+		&:after {
+			display: none;
+		}
+	}
+	@include breakpoint(large) {
+		margin: $pad-half 0;
+		display: inline-block;
+		width: 100%;
+		.search-submit{
+			[class^="icon-"]:before{
+				vertical-align: inherit;
+			}
+		}
+		
+	}
+}

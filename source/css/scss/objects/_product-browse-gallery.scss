@@ -1,0 +1,43 @@
+.product-browse-gallery {
+	.thumbnail-list {
+		margin-left: -3px;
+		margin-right: -3px;
+		margin-bottom: 0;
+		li {
+			margin:0;
+			padding: 6px 3px;
+			a {
+				display: block;
+				&.active {
+					border: 3px solid $primary-accent;
+					&:hover, &:focus {
+						cursor: default;
+					}
+				}
+			}
+		}
+	}
+	.more-colors .icon-x {
+		transform: rotate(45deg) ;
+		-webkit-transform: rotate(45deg) ;
+		-moz-transform: rotate(45deg) ;
+		-o-transform: rotate(45deg) ;
+		-ms-transform: rotate(45deg) ;
+		display: inline-block;
+    	font-size: 7px;
+    	padding-right: 0.5rem;
+    	position: relative;
+    	top: 2px;
+	}
+	
+	@include breakpoint(large) {
+		.thumbnails {
+			display: table;
+			> div.columns {
+				display: table-cell;
+				float: none;
+				vertical-align: middle;
+			}
+		}
+	}
+}
